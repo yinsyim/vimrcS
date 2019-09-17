@@ -46,3 +46,50 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " => vim-commentary
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 setlocal commentstring=#\ %s
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-commentary
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:neocomplete#enable_at_startup = 1
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => python-mode
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+filetype off
+
+call pathogen#infect()
+call pathogen#helptags()
+
+filetype plugin indent on
+syntax on
+
+let g:pymode_lint_on_write = 0
+let g:pymode_lint_on_fly = 0
+let g:pymode_rope = 0
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => color-scheme
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" General
+
+set t_Co=256 " required
+set background=dark
+" set background=light
+hi Normal guibg=NONE ctermbg=NONE
+" -----
+" solarized
+
+" syntax enable
+" set background=dark
+" set background=light
+" colorscheme solarized
+" -----
+" colorscheme
+
+" colorscheme ron
+" colorscheme Tomorrow-Night-Eighties
+colorscheme zellner
+
