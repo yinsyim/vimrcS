@@ -1,4 +1,4 @@
-# <p align="center"> :whale: vimrc :whale: </p>
+# <p align="center"> :whale: vimrcS :whale: </p>
   
 
 ## Install
