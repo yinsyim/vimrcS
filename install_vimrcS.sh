@@ -4,14 +4,17 @@ set -e
 
 cd ~/.vimrcS
 
-echo "
+echo "set runtimepath+=~/.vimrcS
 
-source ~/.vimrcS/vimrc_extended.vim
-source ~/.vimrcS/vimrc_filetypes.vim
 source ~/.vimrcS/vimrc_basic.vim
-source ~/.vimrcS/vimrc_custom.vim
+source ~/.vimrcS/vimrc_filetypes.vim
+source ~/.vimrcS/vimrc_plugins.vim
+source ~/.vimrcS/vimrc_extended.vim
 
-" > ~/.vimrc
+try
+source ~/.vimrcS/vimrc_custom.vim
+catch
+endtry" > ~/.vimrc
 
 echo "Installed vimrcS successfully."
 
