@@ -35,7 +35,7 @@ nnoremap <leader>nh :noh<CR>
 " => Nerdtree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " open Nerdtree
-nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <leader>n :NERDTreeToggle<CR>
 
 " open a Nerdtree automatically when vim starts up if no files were specified
 autocmd StdinReadPre * let s:std_in=1
