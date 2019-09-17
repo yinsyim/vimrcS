@@ -4,7 +4,12 @@ set -e
 
 cd ~/.vimrcS
 
-echo "source ~/.vimrcS/my_configs.vim" > ~/.vimrc
+echo "
+
+source ~/.vimrcS/vimrc_basic.vim
+source ~/.vimrcS/vimrc_custom.vim
+
+" > ~/.vimrc
 
 echo "Installed vimrcS successfully."
 
