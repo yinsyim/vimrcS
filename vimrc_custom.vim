@@ -49,7 +49,7 @@ setlocal commentstring=#\ %s
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => vim-commentary
+" => neocomplete
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:neocomplete#enable_at_startup = 1
 
@@ -76,9 +76,9 @@ let g:pymode_rope = 0
 " General
 
 set t_Co=256 " required
-set background=dark
+" set background=dark
 " set background=light
-hi Normal guibg=NONE ctermbg=NONE
+" hi Normal guibg=NONE ctermbg=NONE
 " -----
 " solarized
 
@@ -87,9 +87,24 @@ hi Normal guibg=NONE ctermbg=NONE
 " set background=light
 " colorscheme solarized
 " -----
+" Unified color scheme (default: dark)
+colo seoul256
+
+" Light color scheme
+" colo seoul256-light
+
+" Switch
+" set background=dark
+" set background=light
+" -----
 " colorscheme
 
 " colorscheme ron
 " colorscheme Tomorrow-Night-Eighties
-colorscheme zellner
+" colorscheme zellner
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Goyo
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+noremap <leader>g :Goyo<CR>
