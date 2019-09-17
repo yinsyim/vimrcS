@@ -13,3 +13,6 @@
 [submodule "plugin_submodules/peaksea"]
 	path = plugin_submodules/peaksea
 	url = https://github.com/vim-scripts/peaksea.git
+[submodule "plugin_submodules/delimitMate"]
+	path = plugin_submodules/delimitMate
+	url = https://github.com/yinsyim/delimitMate.git
