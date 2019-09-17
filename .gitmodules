@@ -1,3 +1,6 @@
 [submodule "plugin_submodules/nerdtree"]
 	path = plugin_submodules/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "plugin_submodules/commentary"]
+	path = plugin_submodules/commentary
+	url = https://tpope.io/vim/commentary.git
