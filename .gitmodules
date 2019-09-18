@@ -22,3 +22,6 @@
 [submodule "plugin_submodules/auto-pairs"]
 	path = plugin_submodules/auto-pairs
 	url = https://github.com/yinsyim/auto-pairs.git
+[submodule "plugin_submodules/tagbar"]
+	path = plugin_submodules/tagbar
+	url = https://github.com/yinsyim/tagbar.git
