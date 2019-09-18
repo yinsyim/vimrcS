@@ -198,4 +198,6 @@ map 9 $
 " => Misc
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Toggle paste mode on and off
-map <leader>p :setlocal paste!<cr>
+nnoremap <leader>sp :setlocal paste!<cr>
+" Toggle wrap on and off
+nnoremap <leader>sw :setlocal wrap!<cr>

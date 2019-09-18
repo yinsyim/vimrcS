@@ -74,6 +74,7 @@ syntax on
 let g:pymode_lint_on_write = 0
 let g:pymode_lint_on_fly = 0
 let g:pymode_rope = 0
+let g:pymode_lint_checkers = ['pep8']
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -114,3 +115,6 @@ colo seoul256
 " => Goyo
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 noremap <leader>g :Goyo<CR>
+let g:goyo_width = 120
+let g:goyo_height = 90
+let g:goyo_linenr = 0
