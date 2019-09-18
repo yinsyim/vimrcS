@@ -25,3 +25,9 @@
 [submodule "plugin_submodules/tagbar"]
 	path = plugin_submodules/tagbar
 	url = https://github.com/yinsyim/tagbar.git
+[submodule "comfortable-motion.vim"]
+	path = comfortable-motion.vim
+	url = https://github.com/yinsyim/comfortable-motion.vim.git
+[submodule "plugin_submodules/comfortable-motion.vim"]
+	path = plugin_submodules/comfortable-motion.vim
+	url = https://github.com/yinsyim/comfortable-motion.vim.git
