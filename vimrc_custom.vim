@@ -76,7 +76,7 @@ let g:pymode_lint_on_fly = 0
 let g:pymode_rope = 0
 let g:pymode_lint_checkers = ['pep8']
 let g:pymode_rope_lookup_project = 0
-" let g:pymode_folding = 0
+let g:pymode_folding = 0
 
 " augroup unset_folding_in_insert_mode
 " 	autocmd!
