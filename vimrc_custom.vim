@@ -21,6 +21,10 @@ nnoremap <leader>qa :qa<CR>
 nnoremap <leader>wa :wa<CR>
 nnoremap <leader>wqa :wqa<CR>
 
+" move cursor one line at the same time when <C-e> and <C-y>
+noremap <C-e> <C-e>j
+noremap <C-y> <C-y>k
+
 " close the debug message window in python-mode
 nmap <leader>j <C-j>:q<CR>
 
