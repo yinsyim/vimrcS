@@ -4,9 +4,13 @@ Based on amix's vimrc.
 
 I think we all love vim because of its simplicity and purity. Maybe i'll remember the moment i see NERDTree forever.
 
+S means hope, btw...
+
+-----
+
 
 * [Install The Complete Version](#install-the-complete-version)
-* [Install Only Basic vimrc](#install-only-basic-vimrc)
+* [Install Basic vimrc](#install-basic-vimrc)
 * [Uninstall](#uninstall)
 
 
@@ -17,7 +21,7 @@ The complete version includes lots of great plugins, configurations and color sc
 	sh ~/.vimrcS/install_vimrcS.sh
 
 
-## Install Only Basic vimrc
+## Install Basic vimrc
 The basic version just does the basic setting to make it easy to use in most conditions. It keeps vim as a pure text editor without plugins or other configurations. Do the following to install:
     
     git clone --depth 1 https://github.com/yinsyim/vimrcS.git ~/.vimrcS
