@@ -8,7 +8,7 @@ long ones i link to the original files or pages.
 -----
 
 - [Builtin](#builtin):
-  - [Useful Builtin Commands](builtin.md)
+  - [Useful Builtin Commands](builtin_commands.md)
   - [Vim Setting Commands](#vim-setting-commands)
 
 - [Plugins](#plugins):
