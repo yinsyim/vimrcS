@@ -2,7 +2,7 @@
   
 Based on amix's vimrc.
 
-I think we all love vim because of its simplicity and purity. Maybe i'll remember the moment i see NERDTree forever.
+For the beauty of simplicity and purity.
 
 S means hope, btw...
 
