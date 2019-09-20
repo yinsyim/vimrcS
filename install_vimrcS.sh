@@ -14,7 +14,7 @@ source ~/.vimrcS/vimrc_extended.vim
 try
 source ~/.vimrcS/vimrc_custom.vim
 catch
-endtry" > ~/.vimrc
+endtry" >> ~/.vimrc
 
 echo "Install vimrcS successfully."
 
