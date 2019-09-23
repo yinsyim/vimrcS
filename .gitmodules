@@ -31,3 +31,6 @@
 [submodule "plugin_submodules/comfortable-motion.vim"]
 	path = plugin_submodules/comfortable-motion.vim
 	url = https://github.com/yinsyim/comfortable-motion.vim.git
+[submodule "plugin_submodules/gruvbox"]
+	path = plugin_submodules/gruvbox
+	url = https://github.com/morhetz/gruvbox.git

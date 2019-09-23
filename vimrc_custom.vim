@@ -94,22 +94,26 @@ let g:pymode_folding = 0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => color-scheme
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" General
-
+" -----General-----
 set t_Co=256 " required
+let g:solarized_termcolors=256
+hi Normal guibg=NONE ctermbg=NONE
 " set background=dark
 " set background=light
-" hi Normal guibg=NONE ctermbg=NONE
-" -----
-" solarized
 
+" -----solarized-----
 " syntax enable
 " set background=dark
 " set background=light
 " colorscheme solarized
-" -----
-" Unified color scheme (default: dark)
-colo seoul256
+
+" -----molokai-----
+" let g:molokai_original = 1
+" let g:rehash256 = 1
+" colorscheme molokai
+
+" -----Unified color scheme (default: dark)-----
+" colo seoul256
 
 " Light color scheme
 " colo seoul256-light
@@ -117,12 +121,17 @@ colo seoul256
 " Switch
 " set background=dark
 " set background=light
-" -----
-" colorscheme
 
+" -----gruvbox-----
+colorscheme gruvbox
+" set background=dark
+" set background=light
+
+" -----Other Colorschemes-----
 " colorscheme ron
 " colorscheme Tomorrow-Night-Eighties
 " colorscheme zellner
+" colorscheme peaksea
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
