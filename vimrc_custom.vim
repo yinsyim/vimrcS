@@ -95,7 +95,10 @@ let g:pymode_folding = 0
 " => color-scheme
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " -----General-----
-set t_Co=256 " required
+if ! has("gui_running") 
+    set t_Co=256 
+endif 
+
 let g:solarized_termcolors=256
 hi Normal guibg=NONE ctermbg=NONE
 " set background=dark
