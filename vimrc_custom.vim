@@ -25,14 +25,11 @@ nnoremap <leader>wqa :wqa<CR>
 noremap <C-e> <C-e>j
 noremap <C-y> <C-y>k
 
-" close the debug message window in python-mode
-nmap <leader>j <C-j>:q<CR>
-
-" refresh
-nnoremap <leader>e :e<CR>
-
 " set nohighlight
 nnoremap <leader>nh :noh<CR>
+
+" close the neighbouring window
+nnoremap <leader>j <C-j>:q<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -42,8 +39,8 @@ nnoremap <leader>nh :noh<CR>
 nnoremap <leader>n :NERDTreeToggle<CR>
 
 " open a Nerdtree automatically when vim starts up if no files were specified
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " close vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
@@ -150,3 +147,10 @@ let g:goyo_linenr = 0
 " => Tagbar
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 noremap <leader>t :TagbarToggle<CR>
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => MRU
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+noremap <leader>m :MRU<CR>
+let MRU_Auto_Close = 1
