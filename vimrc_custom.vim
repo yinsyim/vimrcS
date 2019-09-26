@@ -2,7 +2,7 @@
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " set <leader>
-let g:mapleader=';'
+let mapleader=';'
 
 " move cursor 10 lines
 noremap ( 10k
@@ -36,6 +36,11 @@ noremap <leader>l <C-w>l:q<CR>
 
 " edit vimrc_custom.vim
 noremap <leader>ev :e ~/.vimrcS/vimrc_custom.vim<CR>
+
+" set paste!
+nnoremap <leader>sp :setlocal paste!<CR>
+" set wrap!
+nnoremap <leader>sw :setlocal wrap!<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
