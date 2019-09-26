@@ -26,10 +26,13 @@ noremap <C-e> <C-e>j
 noremap <C-y> <C-y>k
 
 " set nohighlight
-nnoremap <leader>nh :noh<CR>
+nnoremap <leader><CR> :noh<CR>
 
 " close the neighbouring window
-nnoremap <leader>j <C-j>:q<CR>
+noremap <leader>j <C-w>j:q<CR>
+noremap <leader>k <C-w>k:q<CR>
+noremap <leader>h <C-w>h:q<CR>
+noremap <leader>l <C-w>l:q<CR>
 
 " edit vimrc_custom.vim
 noremap <leader>ev :e ~/.vimrcS/vimrc_custom.vim<CR>
