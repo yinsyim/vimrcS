@@ -189,9 +189,9 @@ set laststatus=2
 " => Editing mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Remap VIM 0 to first non-blank character
-map 0 ^ 
+noremap 0 ^
 " Map VIM 9 to the end of line
-map 9 $
+noremap 9 $
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
