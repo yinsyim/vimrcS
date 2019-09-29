@@ -10,8 +10,10 @@ noremap ) 10j
 
 " start a new line in insert mode
 inoremap <C-o> <End><CR>
-inoremap <C-a> <End>
-inoremap <C-i> <Esc>I
+" move cursor to the beginning of line in insert mode
+inoremap <C-b> <Esc>I
+" move cursor to the end of line in insert mode
+inoremap <C-e> <End>
 
 " close or save current window
 nnoremap <leader>q :q<CR>
