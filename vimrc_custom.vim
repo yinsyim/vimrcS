@@ -10,6 +10,8 @@ noremap ) 10j
 
 " start a new line in insert mode
 inoremap <C-o> <End><CR>
+inoremap <C-a> <End>
+inoremap <C-i> <Esc>I
 
 " close or save current window
 nnoremap <leader>q :q<CR>
