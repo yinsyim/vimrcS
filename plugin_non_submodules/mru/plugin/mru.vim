@@ -561,9 +561,9 @@ function! s:MRU_Open_Window(...)
     set cpoptions&vim
 
     " Create mappings to select and edit a file from the MRU list
-    nnoremap <buffer> <silent> <CR>
+    nnoremap <buffer> <silent> o
                 \ :call <SID>MRU_Select_File_Cmd('edit,useopen')<CR>
-    vnoremap <buffer> <silent> <CR>
+    vnoremap <buffer> <silent> o
                 \ :call <SID>MRU_Select_File_Cmd('edit,useopen')<CR>
     nnoremap <buffer> <silent> s
                 \ :call <SID>MRU_Select_File_Cmd('edit,newwin_horiz')<CR>
