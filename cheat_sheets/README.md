@@ -96,6 +96,7 @@ For complete usage instructions, see [Nerdtree Official Doc](https://github.com/
 
 ### MRU
 
+#### Original
 > You can press the 'o' key to open the file name under the cursor in the MRU window in a new window.
 > 
 > To open a file from the MRU window in read-only mode (view), press the 'v' key.
@@ -108,6 +109,33 @@ For complete usage instructions, see [Nerdtree Official Doc](https://github.com/
 > 
 > You can close the MRU window by pressing the 'q' key or using one of the Vim window commands.
 
+#### My custom changes
+I modify the following source code to change the opening file keys to match with NERDTree.
+
+```vim
+ " Create mappings to select and edit a file from the MRU list
+ nnoremap <buffer> <silent> o
+			 \ :call <SID>MRU_Select_File_Cmd('edit,useopen')<CR>
+ vnoremap <buffer> <silent> o
+			 \ :call <SID>MRU_Select_File_Cmd('edit,useopen')<CR>
+ nnoremap <buffer> <silent> i
+			 \ :call <SID>MRU_Select_File_Cmd('edit,newwin_horiz')<CR>
+ vnoremap <buffer> <silent> i
+			 \ :call <SID>MRU_Select_File_Cmd('edit,newwin_horiz')<CR>
+ nnoremap <buffer> <silent> <S-CR>
+			 \ :call <SID>MRU_Select_File_Cmd('edit,newwin_horiz')<CR>
+ vnoremap <buffer> <silent> <S-CR>
+			 \ :call <SID>MRU_Select_File_Cmd('edit,newwin_horiz')<CR>
+ nnoremap <buffer> <silent> s
+			 \ :call <SID>MRU_Select_File_Cmd('edit,newwin_vert')<CR>
+ vnoremap <buffer> <silent> s
+			 \ :call <SID>MRU_Select_File_Cmd('edit,newwin_vert')<CR>
+```
+
+Now press 'o' to open the file in the whole window, 's' to open in a split horizontal window, 
+'i' to open in a split vertical window.
+
+#### User Manual
 [User Manual](https://github.com/yegappan/mru/wiki/User-Manual)
 
 
