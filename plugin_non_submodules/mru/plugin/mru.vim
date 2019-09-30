@@ -565,17 +565,17 @@ function! s:MRU_Open_Window(...)
                 \ :call <SID>MRU_Select_File_Cmd('edit,useopen')<CR>
     vnoremap <buffer> <silent> <CR>
                 \ :call <SID>MRU_Select_File_Cmd('edit,useopen')<CR>
-    nnoremap <buffer> <silent> o
+    nnoremap <buffer> <silent> s
                 \ :call <SID>MRU_Select_File_Cmd('edit,newwin_horiz')<CR>
-    vnoremap <buffer> <silent> o
+    vnoremap <buffer> <silent> s
                 \ :call <SID>MRU_Select_File_Cmd('edit,newwin_horiz')<CR>
     nnoremap <buffer> <silent> <S-CR>
                 \ :call <SID>MRU_Select_File_Cmd('edit,newwin_horiz')<CR>
     vnoremap <buffer> <silent> <S-CR>
                 \ :call <SID>MRU_Select_File_Cmd('edit,newwin_horiz')<CR>
-    nnoremap <buffer> <silent> O
+    nnoremap <buffer> <silent> i
                 \ :call <SID>MRU_Select_File_Cmd('edit,newwin_vert')<CR>
-    vnoremap <buffer> <silent> O
+    vnoremap <buffer> <silent> i
                 \ :call <SID>MRU_Select_File_Cmd('edit,newwin_vert')<CR>
     nnoremap <buffer> <silent> t
                 \ :call <SID>MRU_Select_File_Cmd('edit,newtab')<CR>
