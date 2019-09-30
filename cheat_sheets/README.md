@@ -8,15 +8,16 @@ long ones i link to the original files or pages.
 -----
 
 - [Builtin](#builtin):
-  - [Useful Builtin Commands](builtin_commands.md)
-  - [Vim Setting Commands](#vim-setting-commands)
+    - [Useful Builtin Commands](builtin_commands.md)
+    - [Vim Setting Commands](#vim-setting-commands)
 
 - [Plugins](#plugins):
-  - [Nerdtree](#nerdtree)
+    - [Nerdtree](#nerdtree)
+    - [MRU](#mru)
 
 - [Others](#others):
-  - [Other Useful Skills](#other-useful-skills)
-  - [References](#references)
+    - [Other Useful Skills](#other-useful-skills)
+    - [References](#references)
 
 
 
@@ -93,6 +94,21 @@ Here are some frequently used commands:
 
 For complete usage instructions, see [Nerdtree Official Doc](https://github.com/scrooloose/nerdtree/blob/master/doc/NERDTree.txt)
 
+### MRU
+
+> You can press the 'o' key to open the file name under the cursor in the MRU window in a new window.
+> 
+> To open a file from the MRU window in read-only mode (view), press the 'v' key.
+> 
+> To open a file from the MRU window in a new tab, press the 't' key. If the file is already opened in a window in the current or in another tab, then the cursor is moved to that tab. Otherwise, a new tab is opened.
+> 
+> You can open multiple files from the MRU window by specifying a count before pressing '' or 'v' or 'o' or 't'. You can also visually select multiple filenames and invoke the commands to open the files. Each selected file will be opened in a separate window or tab.
+> 
+> You can press the 'u' key in the MRU window to update the file list. This is useful if you keep the MRU window open always.
+> 
+> You can close the MRU window by pressing the 'q' key or using one of the Vim window commands.
+
+[User Manual](https://github.com/yegappan/mru/wiki/User-Manual)
 
 
 ## Others
