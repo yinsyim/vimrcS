@@ -2,7 +2,7 @@
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " set <leader>
-let mapleader=';'
+let mapleader=','
 
 " move cursor 10 lines
 noremap ( 10k
