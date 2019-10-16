@@ -47,6 +47,8 @@ noremap <leader>ev :e ~/.vimrcS/vimrc_custom.vim<CR>
 nnoremap <leader>sp :setlocal paste!<CR>
 " set wrap!
 nnoremap <leader>sw :setlocal wrap!<CR>
+" set number!
+nnoremap <leader>sn :setlocal number!<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
