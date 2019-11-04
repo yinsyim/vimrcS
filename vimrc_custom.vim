@@ -112,46 +112,35 @@ let g:pymode_options_max_line_length = 256
 " => color-scheme
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " -----General-----
-if ! has("gui_running") 
-    set t_Co=256 
-endif 
+if ! has("gui_running")
+    set t_Co=256
+endif
 
-let g:solarized_termcolors=256
-hi Normal guibg=NONE ctermbg=NONE
+" hi Normal guibg=NONE ctermbg=NONE
+
 " set background=dark
 " set background=light
 
 " -----solarized-----
+" let g:solarized_termcolors=256
 " syntax enable
 " set background=dark
 " set background=light
 " colorscheme solarized
 
-" -----molokai-----
-" let g:molokai_original = 1
-" let g:rehash256 = 1
-" colorscheme molokai
-
-" -----Unified color scheme (default: dark)-----
-" colo seoul256
-
-" Light color scheme
-" colo seoul256-light
-
-" Switch
-" set background=dark
-" set background=light
-
 " -----gruvbox-----
-colorscheme gruvbox
+" colorscheme gruvbox
 " set background=dark
 " set background=light
+
+" -----candid.vim-----
+" set background=dark
+" syntax on
+" colorscheme candid
 
 " -----Other Colorschemes-----
 " colorscheme ron
-" colorscheme Tomorrow-Night-Eighties
 " colorscheme zellner
-" colorscheme peaksea
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
