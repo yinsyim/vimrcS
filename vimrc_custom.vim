@@ -144,6 +144,11 @@ endif
 " -----darkness-----
 " colorscheme darkness
 
+" ---forest night---
+set termguicolors
+
+colorscheme forest-night
+
 " -----Other Colorschemes-----
 " colorscheme ron
 " colorscheme zellner
