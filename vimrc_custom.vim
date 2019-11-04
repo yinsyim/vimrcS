@@ -138,6 +138,12 @@ endif
 " syntax on
 " colorscheme candid
 
+" -----darcula-----
+" colorscheme darcula
+
+" -----darkness-----
+" colorscheme darkness
+
 " -----Other Colorschemes-----
 " colorscheme ron
 " colorscheme zellner
