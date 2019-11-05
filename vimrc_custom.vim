@@ -125,31 +125,57 @@ endif
 " let g:solarized_termcolors=256
 " syntax enable
 " set background=dark
-" " set background=light
+" set background=light
 " colorscheme solarized
-
 " -----gruvbox-----
 " set background=dark
-set background=light
-colorscheme gruvbox
-
+" set background=light
+" colorscheme gruvbox
 " -----candid.vim-----
 " set background=dark
 " syntax on
 " colorscheme candid
-
 " -----darcula-----
 " colorscheme darcula
-
-" -----darkness-----
+" -----
 " colorscheme darkness
-
-" ---forest night---
+" -----forest night-----
+" set termguicolors
+" colorscheme forest-night
+" -----
+" colorscheme typewriter
+" -----
+colorscheme perun
+" -----
+" set termguicolors
+" colorscheme sacredforest
+" -----
+" set background=dark
+" colorscheme beelzebub
+" -----
+" colorscheme yui
+" -----
+" set termguicolors
+" colorscheme strawberry-light
+" colorscheme strawberry-dark
+" -----
+" set termguicolors
+" colorscheme velenjak
+" -----
+" set t_Co=256
 " set termguicolors
 "
-" colorscheme forest-night
+" let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+" let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+"
+" set background=dark    " Setting dark mode
+" colorscheme deus
+" let g:deus_termcolors=256
+" -----
+" set background=light
+" colorscheme solarized8
 
-" -----Other Colorschemes-----
+" -----Builtin-----
 " colorscheme ron
 " colorscheme zellner
 
