@@ -125,13 +125,13 @@ endif
 " let g:solarized_termcolors=256
 " syntax enable
 " set background=dark
-" set background=light
+" " set background=light
 " colorscheme solarized
 
 " -----gruvbox-----
-" colorscheme gruvbox
 " set background=dark
-" set background=light
+set background=light
+colorscheme gruvbox
 
 " -----candid.vim-----
 " set background=dark
@@ -145,9 +145,9 @@ endif
 " colorscheme darkness
 
 " ---forest night---
-set termguicolors
-
-colorscheme forest-night
+" set termguicolors
+"
+" colorscheme forest-night
 
 " -----Other Colorschemes-----
 " colorscheme ron
