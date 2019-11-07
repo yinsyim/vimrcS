@@ -132,6 +132,7 @@ endif
 " set background=light
 " colorscheme gruvbox
 " -----candid.vim-----
+" set termguicolors
 " set background=dark
 " syntax on
 " colorscheme candid
@@ -145,7 +146,7 @@ endif
 " -----
 " colorscheme typewriter
 " -----
-colorscheme perun
+" colorscheme perun
 " -----
 " set termguicolors
 " colorscheme sacredforest
@@ -162,15 +163,15 @@ colorscheme perun
 " set termguicolors
 " colorscheme velenjak
 " -----
-" set t_Co=256
-" set termguicolors
-"
-" let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-" let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-"
-" set background=dark    " Setting dark mode
-" colorscheme deus
-" let g:deus_termcolors=256
+set t_Co=256
+set termguicolors
+
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+
+set background=dark    " Setting dark mode
+colorscheme deus
+let g:deus_termcolors=256
 " -----
 " set background=light
 " colorscheme solarized8
@@ -178,6 +179,7 @@ colorscheme perun
 " -----Builtin-----
 " colorscheme ron
 " colorscheme zellner
+" colorscheme delek
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
