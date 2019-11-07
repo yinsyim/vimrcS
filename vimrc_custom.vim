@@ -146,7 +146,7 @@ endif
 " -----
 " colorscheme typewriter
 " -----
-" colorscheme perun
+colorscheme perun
 " -----
 " set termguicolors
 " colorscheme sacredforest
@@ -163,21 +163,42 @@ endif
 " set termguicolors
 " colorscheme velenjak
 " -----
-set t_Co=256
-set termguicolors
-
-let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-
-set background=dark    " Setting dark mode
-colorscheme deus
-let g:deus_termcolors=256
+" set t_Co=256
+" set termguicolors
+"
+" let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+" let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+"
+" set background=dark    " Setting dark mode
+" colorscheme deus
+" let g:deus_termcolors=256
 " -----
 " set background=light
+" set background=dark
 " colorscheme solarized8
+" -----
+" set termguicolors
+" colorscheme base16-default-dark
+" -----
+" set termguicolors
+" colorscheme desert-night
+" -----
+" colorscheme yin
+" -----
+" colorscheme yang
+" -----
+" set termguicolors
+" " set background=light
+" set background=dark
+" colorscheme snow
+" -----
+" colorscheme nofrils-dark
+" colorscheme nofrils-light
+" colorscheme nofrils-sepia
+" colorscheme nofrils-acme
 
 " -----Builtin-----
-" colorscheme ron
+" set termguicolors
 " colorscheme zellner
 " colorscheme delek
 
