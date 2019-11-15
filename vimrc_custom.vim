@@ -124,7 +124,7 @@ endif
 " -----solarized-----
 " let g:solarized_termcolors=256
 " syntax enable
-" set background=dark
+" " set background=dark
 " set background=light
 " colorscheme solarized
 " -----gruvbox-----
@@ -146,7 +146,8 @@ endif
 " -----
 " colorscheme typewriter
 " -----
-colorscheme perun
+" set termguicolors
+" colorscheme perun
 " -----
 " set termguicolors
 " colorscheme sacredforest
@@ -201,6 +202,7 @@ colorscheme perun
 " set termguicolors
 " colorscheme zellner
 " colorscheme delek
+colorscheme default
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
