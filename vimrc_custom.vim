@@ -11,6 +11,9 @@ set mouse=""
 noremap ( 10k
 noremap ) 10j
 
+" select all
+noremap <leader>a <Esc>ggVG
+
 " start a new line in insert mode
 inoremap <C-o> <End><CR>
 " move cursor to the end of line in insert mode
