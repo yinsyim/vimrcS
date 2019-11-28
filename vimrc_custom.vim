@@ -100,6 +100,7 @@ let g:pymode_lint_checkers = ["pylint"]
 let g:pymode_rope_lookup_project = 0
 let g:pymode_folding = 0
 let g:pymode_options_max_line_length = 256
+let g:pymode_lint_signs = 0
 
 " augroup unset_folding_in_insert_mode
 " 	autocmd!
@@ -166,10 +167,10 @@ endif
 " -----
 " set t_Co=256
 " set termguicolors
-"
+
 " let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 " let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-"
+
 " set background=dark    " Setting dark mode
 " colorscheme deus
 " let g:deus_termcolors=256
@@ -189,20 +190,21 @@ endif
 " colorscheme yang
 " -----
 " set termguicolors
-" " set background=light
+" set background=light
 " set background=dark
 " colorscheme snow
 " -----
 " colorscheme nofrils-dark
 " colorscheme nofrils-light
-" colorscheme nofrils-sepia
+colorscheme nofrils-sepia
 " colorscheme nofrils-acme
 
 " -----Builtin-----
 " set termguicolors
 " colorscheme zellner
 " colorscheme delek
-colorscheme default
+" colorscheme desert
+" colorscheme default
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
