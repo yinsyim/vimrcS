@@ -120,17 +120,17 @@ if ! has("gui_running")
     set t_Co=256
 endif
 
-" hi Normal guibg=NONE ctermbg=NONE
+hi Normal guibg=NONE ctermbg=NONE
 
 " set background=dark
 " set background=light
 
 " -----solarized-----
-" let g:solarized_termcolors=256
-" syntax enable
-" " set background=dark
-" set background=light
-" colorscheme solarized
+let g:solarized_termcolors=256
+syntax enable
+" set background=dark
+set background=light
+colorscheme solarized
 " -----gruvbox-----
 " set background=dark
 " set background=light
@@ -156,7 +156,7 @@ endif
 " set termguicolors
 " colorscheme sacredforest
 " -----
-" set background=dark
+" set background=light
 " colorscheme beelzebub
 " -----
 " colorscheme yui
@@ -199,7 +199,7 @@ endif
 " -----
 " colorscheme nofrils-dark
 " colorscheme nofrils-light
-colorscheme nofrils-sepia
+" colorscheme nofrils-sepia
 " colorscheme nofrils-acme
 
 " -----Builtin-----
