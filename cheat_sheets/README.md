@@ -17,10 +17,10 @@ long ones i link to the original files or pages.
     * [MRU](#mru)
 
 - [Note](#note)
-    - [About \<C-i\> Mapping](#about---c-i---mapping)
+    * [About \<C-i\> Mapping](#about_<c-i>_mapping)
 
 - [Other Useful Skills](#other-useful-skills)
-    * [Switch Between Shell and Vim (ctl-z + fg)](#switch-between-shell-and-vim---ctl-z-----fg--)
+    * [Switch Between Shell and Vim (ctl-z + fg)](#switch_between_shell_and_vim)
 
 - [References](#references)
 
@@ -158,6 +158,7 @@ Reference: https://stackoverflow.com/questions/24967213/vim-mapping-of-c-i-in-in
 
 ## Other Useful Skills
 
+<a id="switch_between_shell_and_vim"></a>
 ### Switch Between Shell and Vim (`ctl-z` + `fg`)
 
 If you are doing some code editing, debugging and testing work, i mean,
