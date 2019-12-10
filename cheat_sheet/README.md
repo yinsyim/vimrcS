@@ -12,11 +12,11 @@
     * [Visual Star Search](#visual-star-search)
     * [MRU](#mru)
 
-- [Note](#note)
-    * [About \<C-i\> Mapping](#about_<c-i>_mapping)
-
 - [Other Useful Skills](#other-useful-skills)
     * [Switch Between Shell and Vim (ctl-z + fg)](#switch_between_shell_and_vim)
+
+- [Note](#note)
+    * [About \<C-i\> Mapping](#about_<c-i>_mapping)
 
 - [References](#references)
 
@@ -146,18 +146,6 @@ Now press 'o' to open the file in the whole window, 's' to open in a split horiz
 https://github.com/yegappan/mru/wiki/User-Manual
 
 
-## Note
-
-<a id="about_<c-i>_mapping"></a>
-### About \<C-i\> Mapping
-When I do `inoremap <C-i> <Esc>I` to move cursor to the start of line in insert mode, the **Tab** key
-went wrong and works like **<C-i>**. Here's why:  
-
-> Some key combinations, like Ctrl + non-alphabetic cannot be mapped, and Ctrl + letter vs. Ctrl + Shift + letter cannot be distinguished. (Unless your terminal sends a distinct termcap code for it, which most don't.) In insert or command-line mode, try typing the key combination. If nothing happens / is inserted, you cannot use that key combination. This also applies to <Tab> / <C-I>, <CR> / <C-M> / <Esc> / <C-[> etc. (Only exception is <BS> / <C-H>.) 
-
-Reference: https://stackoverflow.com/questions/24967213/vim-mapping-of-c-i-in-insert-mode
-
-
 ## Other Useful Skills
 
 <a id="switch_between_shell_and_vim"></a>
@@ -184,6 +172,18 @@ $ ctl-z          # move current task to background
 so the process can be simplified to: after finishing editing, press `ctrl-z`
 to put vim process into background, now you are in shell, do your testing,
 and use `fg` to call back your vim again.
+
+
+## Note
+
+<a id="about_<c-i>_mapping"></a>
+### About \<C-i\> Mapping
+When I do `inoremap <C-i> <Esc>I` to move cursor to the start of line in insert mode, the **Tab** key
+went wrong and works like **<C-i>**. Here's why:  
+
+> Some key combinations, like Ctrl + non-alphabetic cannot be mapped, and Ctrl + letter vs. Ctrl + Shift + letter cannot be distinguished. (Unless your terminal sends a distinct termcap code for it, which most don't.) In insert or command-line mode, try typing the key combination. If nothing happens / is inserted, you cannot use that key combination. This also applies to <Tab> / <C-I>, <CR> / <C-M> / <Esc> / <C-[> etc. (Only exception is <BS> / <C-H>.) 
+
+Reference: https://stackoverflow.com/questions/24967213/vim-mapping-of-c-i-in-insert-mode
 
 
 ## References
