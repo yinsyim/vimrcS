@@ -159,7 +159,7 @@ Reference: https://stackoverflow.com/questions/24967213/vim-mapping-of-c-i-in-in
 ## Other Useful Skills
 
 <a id="switch_between_shell_and_vim"></a>
-### Switch Between Shell and Vim (`ctl-z` + `fg`)
+### Switch Between Shell and Vim (ctl-z + fg)
 
 If you are doing some code editing, debugging and testing work, i mean,
 edit files with vim -> exit vim -> test and run -> edit files again -> exit
