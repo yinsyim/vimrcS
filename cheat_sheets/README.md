@@ -75,6 +75,8 @@ long ones i link to the original files or pages.
 
 ### Nerdtree
 
+[scrooloose/nerdtree](https://github.com/scrooloose/nerdtree)
+
 Here are some frequently used commands:
 
 | Command | Function |
@@ -99,7 +101,17 @@ Here are some frequently used commands:
 
 For complete usage instructions, see [Nerdtree Official Doc](https://github.com/scrooloose/nerdtree/blob/master/doc/NERDTree.txt)
 
+
+### Visual Star Search
+
+[nelstrom/vim-visual-star-search](https://github.com/nelstrom/vim-visual-star-search)
+
+This allows you to select some text using Vim's visual mode and then hit **\*** and **#** to search for it elsewhere in the file.
+
+
 ### MRU
+
+[yegappan/mru](https://github.com/yegappan/mru)
 
 #### Original
 > You can press the 'o' key to open the file name under the cursor in the MRU window in a new window.
@@ -141,7 +153,7 @@ Now press 'o' to open the file in the whole window, 's' to open in a split horiz
 'i' to open in a split vertical window.
 
 #### User Manual
-[User Manual](https://github.com/yegappan/mru/wiki/User-Manual)
+https://github.com/yegappan/mru/wiki/User-Manual
 
 
 ## Note
