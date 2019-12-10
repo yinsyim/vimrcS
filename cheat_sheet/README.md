@@ -2,9 +2,9 @@
 
 
 
-- [Builtin](#builtin):
+- [Builtin Commands](#builtin-commands):
     * [Builtin Commands](builtin_commands.md)
-    * [Frequently Used Builtin Commands](https://gist.github.com/yinsyim/ce9d56b497746b9365ea6d166043a710)
+    * [Frequently Used Commands](https://gist.github.com/yinsyim/ce9d56b497746b9365ea6d166043a710)
     * [Setting Commands](#setting-commands)
 
 - [Plugins Related Commands](#plugins-related-commands):
@@ -22,7 +22,7 @@
 
 
 
-## Builtin
+## Builtin Commands
 
 ### Setting Commands
 
