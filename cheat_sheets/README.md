@@ -17,10 +17,10 @@ long ones i link to the original files or pages.
     * [MRU](#mru)
 
 - [Note](#note)
-    * [About \<C-i\> Mapping](#about-c-i-mapping)
+    * [About \<C-i\> Mapping](#about-ci-mapping)
 
 - [Other Useful Skills](#other-useful-skills)
-    * [Switch Between Shell and Vim (`ctl-z` + `fg`)](#switch-between-shell-and-vim---ctl-z-----fg--)
+    * [Switch Between Shell and Vim (ctl-z + fg)](#switch-between-shell-and-vim---ctl-z-----fg--)
 
 - [References](#references)
 
