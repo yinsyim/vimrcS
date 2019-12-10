@@ -8,22 +8,27 @@ long ones i link to the original files or pages.
 -----
 
 - [Builtin](#builtin):
-    - [Useful Builtin Commands](builtin_commands.md)
-    - [Vim Setting Commands](#vim-setting-commands)
+    * [Builtin Commands](builtin_commands.md)
+    * [Frequently Used Builtin Commands](https://gist.github.com/yinsyim/ce9d56b497746b9365ea6d166043a710)
+    * [Setting Commands](#setting-commands)
 
-- [Plugins](#plugins):
-    - [Nerdtree](#nerdtree)
-    - [MRU](#mru)
+- [Plugins Related Commands](#plugins-related-commands):
+    * [Nerdtree](#nerdtree)
+    * [MRU](#mru)
 
-- [Others](#others):
-    - [Other Useful Skills](#other-useful-skills)
-    - [References](#references)
+- [Note](#note)
+    * [About <C-i> Mapping](#about--c-i--mapping)
+
+- [Other Useful Skills](#other-useful-skills)
+    * [Switch Between Shell and Vim (`ctl-z` + `fg`)](#switch-between-shell-and-vim---ctl-z-----fg--)
+
+- [References](#references)
 
 
 
 ## Builtin
 
-### Vim Setting Commands
+### Setting Commands
 
 1. show settings
 
@@ -66,7 +71,7 @@ long ones i link to the original files or pages.
     `n`: normal mode.
 
 
-## Plugins
+## Plugins Related Commands
 
 ### Nerdtree
 
@@ -139,12 +144,20 @@ Now press 'o' to open the file in the whole window, 's' to open in a split horiz
 [User Manual](https://github.com/yegappan/mru/wiki/User-Manual)
 
 
-## Others
+## Note
+
+### About <C-i> Mapping
+When I do `inoremap <C-i> <Esc>I` to move cursor to the start of line in insert mode, the **Tab** key
+went wrong and works like **<C-i>**. Here's why:  
+
+> Some key combinations, like Ctrl + non-alphabetic cannot be mapped, and Ctrl + letter vs. Ctrl + Shift + letter cannot be distinguished. (Unless your terminal sends a distinct termcap code for it, which most don't.) In insert or command-line mode, try typing the key combination. If nothing happens / is inserted, you cannot use that key combination. This also applies to <Tab> / <C-I>, <CR> / <C-M> / <Esc> / <C-[> etc. (Only exception is <BS> / <C-H>.) 
+
+Reference: https://stackoverflow.com/questions/24967213/vim-mapping-of-c-i-in-insert-mode
 
 
-### Other Useful Skills
+## Other Useful Skills
 
-#### switch between shell and vim (`ctl-z` + `fg`)
+### Switch Between Shell and Vim (`ctl-z` + `fg`)
 
 If you are doing some code editing, debugging and testing work, i mean,
 edit files with vim -> exit vim -> test and run -> edit files again -> exit
