@@ -1,11 +1,6 @@
 # <p align="center"> :apple: vimrc cheat sheet :green_apple: </p>
 
 
-This is the cheat sheet of my vimrc. I put the short content just here, and for the
-long ones i link to the original files or pages.
-
-
------
 
 - [Builtin](#builtin):
     * [Builtin Commands](builtin_commands.md)
