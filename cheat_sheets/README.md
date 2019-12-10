@@ -17,7 +17,7 @@ long ones i link to the original files or pages.
     * [MRU](#mru)
 
 - [Note](#note)
-    * [About \<C-i\> Mapping](#about_c-i_mapping)
+    * [About \<C-i\> Mapping](#about_<c-i>_mapping)
 
 - [Other Useful Skills](#other-useful-skills)
     * [Switch Between Shell and Vim (ctl-z + fg)](#switch-between-shell-and-vim---ctl-z-----fg--)
@@ -146,8 +146,8 @@ Now press 'o' to open the file in the whole window, 's' to open in a split horiz
 
 ## Note
 
-<a id="about_c-i_mapping"></a>
-### About <C-i> Mapping
+<a id="about_<c-i>_mapping"></a>
+### About \<C-i\> Mapping
 When I do `inoremap <C-i> <Esc>I` to move cursor to the start of line in insert mode, the **Tab** key
 went wrong and works like **<C-i>**. Here's why:  
 
