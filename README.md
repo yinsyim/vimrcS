@@ -12,7 +12,7 @@ S means hope, btw...
 * [Install The Complete Version](#install-the-complete-version)
 * [Install Basic vimrc](#install-basic-vimrc)
 * [Uninstall](#uninstall)
-* [Cheatsheet](./cheat_sheets/)
+* [Cheat Sheet](./cheat_sheet/)
 
 
 ## Install The Complete Version
