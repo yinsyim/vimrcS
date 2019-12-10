@@ -14,6 +14,7 @@ long ones i link to the original files or pages.
 
 - [Plugins Related Commands](#plugins-related-commands):
     * [Nerdtree](#nerdtree)
+    * [Visual Star Search](#visual-star-search)
     * [MRU](#mru)
 
 - [Note](#note)
@@ -73,9 +74,7 @@ long ones i link to the original files or pages.
 
 ## Plugins Related Commands
 
-### Nerdtree
-
-[scrooloose/nerdtree](https://github.com/scrooloose/nerdtree)
+### [Nerdtree](https://github.com/scrooloose/nerdtree)
 
 Here are some frequently used commands:
 
@@ -102,16 +101,12 @@ Here are some frequently used commands:
 For complete usage instructions, see [Nerdtree Official Doc](https://github.com/scrooloose/nerdtree/blob/master/doc/NERDTree.txt)
 
 
-### Visual Star Search
-
-[nelstrom/vim-visual-star-search](https://github.com/nelstrom/vim-visual-star-search)
+### [Visual Star Search](https://github.com/nelstrom/vim-visual-star-search)
 
 This allows you to select some text using Vim's visual mode and then hit **\*** and **#** to search for it elsewhere in the file.
 
 
-### MRU
-
-[yegappan/mru](https://github.com/yegappan/mru)
+### [MRU](https://github.com/yegappan/mru)
 
 #### Original
 > You can press the 'o' key to open the file name under the cursor in the MRU window in a new window.
