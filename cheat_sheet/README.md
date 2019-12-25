@@ -71,26 +71,28 @@
 
 ### [Nerdtree](https://github.com/scrooloose/nerdtree)
 
+`<leader>-n` to toggle Nerdtree.
+
 Here are some frequently used commands:
 
 | Command | Function |
 | ------ | -------- |
-| m  |  open the menu |
+| `m`  |  open the menu |
 | `o` or `Enter` | open files, directories, bookmarks |
 | `O` | **Recursivly** open the selected directory |
-| s  | open a file in a vertical split window |
-| i  | open a file in a horizontal split window |
-| t  | open a file in new tab |
-| x  | close the current node parent (unfold current folder) |
-| X  | **Recursivly** close the current node parent (unfold folders) |
-| R  | refresh |
+| `s`  | open a file in a vertical split window |
+| `i`  | open a file in a horizontal split window |
+| `t`  | open a file in new tab |
+| `x`  | close the current node parent (unfold current folder) |
+| `X`  | **Recursivly** close the current node parent (unfold folders) |
+| `R`  | refresh |
 | cd | change tree root to the selected node/directory |
 | CD | change tree root to CWD |
-| I  | toggle whether hidden files displayed |
+| `I`  | toggle whether hidden files displayed |
 | f  | toggle whether file filters are used |
 | F  | toggle whether files are displayed |
 | B  | toggle whether bookmark table displayed |
-| q  | QUIT nerdtree window |
+| `q`  | QUIT nerdtree window |
 | A  | zoom in/out nerdtree window |
 
 For complete usage instructions, see [Nerdtree Official Doc](https://github.com/scrooloose/nerdtree/blob/master/doc/NERDTree.txt)
@@ -102,6 +104,8 @@ This allows you to select some text using Vim's visual mode and then hit **\*** 
 
 
 ### [MRU](https://github.com/yegappan/mru)
+
+`<leader>-m` to open MRU.
 
 #### Original
 > You can press the 'o' key to open the file name under the cursor in the MRU window in a new window.
@@ -144,6 +148,25 @@ Now press 'o' to open the file in the whole window, 's' to open in a split horiz
 
 #### User Manual
 https://github.com/yegappan/mru/wiki/User-Manual
+
+
+### [Tagbar](https://github.com/majutsushi/tagbar)
+`<leader>-t` to open Tagbar.
+
+The following mappings are valid in the Tagbar window:
+
+<CR>/<Enter>  Jump to the tag under the cursor. Doesn't work for pseudo-tags
+              or generic headers.
+                Map option: tagbar_map_jump
+p             Jump to the tag under the cursor, but stay in the Tagbar window.
+                Map option: tagbar_map_preview
+P             Open the tag in a |preview-window|.
+                Map option: tagbar_map_previewwin
+o/za          Toggle the fold under the cursor or the current one if there is
+              no fold under the cursor.
+                Map option: tagbar_map_togglefold
+s             Toggle sort order between name and file order.
+                Map option: tagbar_map_togglesort
 
 
 ## Other Useful Skills
