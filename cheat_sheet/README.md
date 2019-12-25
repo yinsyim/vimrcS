@@ -156,6 +156,7 @@ https://github.com/yegappan/mru/wiki/User-Manual
 
 The following mappings are valid in the Tagbar window:
 
+```
 <CR>/<Enter>  Jump to the tag under the cursor. Doesn't work for pseudo-tags
               or generic headers.
                 Map option: tagbar_map_jump
@@ -168,6 +169,7 @@ o/za          Toggle the fold under the cursor or the current one if there is
                 Map option: tagbar_map_togglefold
 s             Toggle sort order between name and file order.
                 Map option: tagbar_map_togglesort
+```
 
 
 ## Other Useful Skills
