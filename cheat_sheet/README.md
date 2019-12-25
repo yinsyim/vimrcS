@@ -11,6 +11,7 @@
     * [Nerdtree](#nerdtree)
     * [Visual Star Search](#visual-star-search)
     * [MRU](#mru)
+    * [Tagbar](#tagbar)
 
 - [Other Useful Skills](#other-useful-skills)
     * [Switch Between Shell and Vim (ctl-z + fg)](#switch_between_shell_and_vim)
