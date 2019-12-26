@@ -7,8 +7,7 @@ set history=500
 " Set to auto read when a file is changed from the outside
 set autoread
 
-" With a map leader it's possible to do extra key combinations
-" like <leader>w saves the current file
+" Set mapleader
 let mapleader = ";"
 
 
@@ -159,13 +158,34 @@ vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 " => Moving around, tabs, windows and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Disable highlight when <leader><cr> is pressed
-map <silent> <leader><cr> :noh<cr>
+noremap <silent> <leader><cr> :noh<cr>
 
 " Smart way to move between windows
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
+noremap <C-j> <C-W>j
+noremap <C-k> <C-W>k
+noremap <C-h> <C-W>h
+noremap <C-l> <C-W>l
+
+" Useful mappings for managing tabs
+noremap <leader>tn :tabnew<cr>
+noremap <leader>to :tabonly<cr>
+noremap <leader>tc :tabclose<cr>
+noremap <leader>tm :tabmove 
+noremap <leader>tx :tabnext 
+noremap <Tab> gt
+noremap <Space> gT
+
+" Let 'tl' toggle between this and the last accessed tab
+let g:lasttab = 1
+nmap <Leader>tl :exe "tabn ".g:lasttab<CR>
+au TabLeave * let g:lasttab = tabpagenr()
+
+" Opens a new tab with the current buffer's path
+" Super useful when editing files in the same directory
+noremap <leader>te :tabedit <C-r>=expand("%:p:h")<cr>/
+
+" Switch CWD to the directory of the open buffer
+noremap <leader>cd :cd %:p:h<cr>:pwd<cr>
 
 " Specify the behavior when switching between buffers
 try
