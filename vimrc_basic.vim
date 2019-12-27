@@ -167,22 +167,23 @@ noremap <C-h> <C-W>h
 noremap <C-l> <C-W>l
 
 " Useful mappings for managing tabs
-noremap <leader>tn :tabnew<cr>
-noremap <leader>to :tabonly<cr>
-noremap <leader>tc :tabclose<cr>
-noremap <leader>tm :tabmove 
-noremap <leader>tx :tabnext 
+noremap <leader><Tab> :tabnew<cr>
+" noremap <leader>tn :tabnew<cr>
+noremap <leader><Tab>o :tabonly<cr>
+noremap <leader><Tab>c :tabclose<cr>
+noremap <leader><Tab>m :tabmove 
+noremap <leader><Tab>n :tabnext 
 noremap <Tab> gt
 noremap <Space> gT
 
 " Let 'tl' toggle between this and the last accessed tab
 let g:lasttab = 1
-nmap <Leader>tl :exe "tabn ".g:lasttab<CR>
+nmap <Leader><Tab>l :exe "tabn ".g:lasttab<CR>
 au TabLeave * let g:lasttab = tabpagenr()
 
 " Opens a new tab with the current buffer's path
 " Super useful when editing files in the same directory
-noremap <leader>te :tabedit <C-r>=expand("%:p:h")<cr>/
+noremap <leader><Tab>e :tabedit <C-r>=expand("%:p:h")<cr>/
 
 " Switch CWD to the directory of the open buffer
 noremap <leader>cd :cd %:p:h<cr>:pwd<cr>
