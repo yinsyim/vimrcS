@@ -44,6 +44,7 @@ noremap <leader>l <C-w>l:q<CR>
 noremap <leader>ev :e ~/.vimrcS/vimrc_custom.vim<CR>
 
 " set paste!
+nnoremap <leader>p :setlocal paste!<CR>
 nnoremap <leader>sp :setlocal paste!<CR>
 " set wrap!
 nnoremap <leader>sw :setlocal wrap!<CR>
