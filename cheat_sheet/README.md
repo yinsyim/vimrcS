@@ -3,7 +3,7 @@
 
 
 - [Builtin Commands](#builtin-commands):
-    * [Builtin Commands](builtin_commands.md)
+    * [Editing Commands](builtin_commands.md)
     * [Setting Commands](#setting-commands)
 
 - [Plugins Related Commands](#plugins-related-commands):
