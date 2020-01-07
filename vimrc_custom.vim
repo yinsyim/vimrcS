@@ -21,6 +21,7 @@ inoremap <C-a> <End>
 nnoremap <leader>q :q<CR>
 nnoremap <leader>w :w<CR>
 nnoremap <leader>wq :wq<CR>
+nnoremap <leader><CR> :wqa<CR>
 
 " close or save all windows
 nnoremap <leader>qa :qa<CR>
@@ -32,7 +33,7 @@ nnoremap <leader>wqa :wqa<CR>
 " noremap <C-y> <C-y>k
 
 " set nohighlight
-nnoremap <leader><CR> :noh<CR>
+nnoremap <leader><Space> :noh<CR>
 
 " close the neighbouring window
 noremap <leader>j <C-w>j:q<CR>
