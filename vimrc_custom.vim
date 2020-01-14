@@ -9,7 +9,8 @@ noremap ( 10k
 noremap ) 10j
 
 " select all
-noremap <leader>a <Esc>ggVG
+" noremap <leader>a <Esc>ggVG
+nnoremap <C-a> <Esc>ggVG
 
 " start a new line in insert mode
 inoremap <C-o> <End><CR>
@@ -67,15 +68,15 @@ hi Normal guibg=NONE ctermbg=NONE
 " set background=light
 
 " -----solarized-----
-let g:solarized_termcolors=256
-syntax enable
-" set background=dark
-set background=light
-colorscheme solarized
-" -----gruvbox-----
-" set background=dark
+" let g:solarized_termcolors=256
+" syntax enable
+" " set background=dark
 " set background=light
-" colorscheme gruvbox
+" colorscheme solarized
+" -----gruvbox-----
+set background=dark
+" set background=light
+colorscheme gruvbox
 " -----candid.vim-----
 " set termguicolors
 " set background=dark

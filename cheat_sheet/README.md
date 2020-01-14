@@ -11,6 +11,7 @@
     * [Visual Star Search](#visual-star-search)
     * [MRU](#mru)
     * [Tagbar](#tagbar)
+    * [Ack](#ack)
 
 - [Other Useful Skills](#other-useful-skills)
     * [Switch Between Shell and Vim (ctl-z + fg)](#switch_between_shell_and_vim)
@@ -120,7 +121,7 @@ This allows you to select some text using Vim's visual mode and then hit **\*** 
 > 
 > You can close the MRU window by pressing the 'q' key or using one of the Vim window commands.
 
-#### My custom changes
+#### My Custom Changes
 I modify the following source code to change the opening file keys to match with NERDTree.
 
 ```vim
@@ -168,6 +169,55 @@ o/za          Toggle the fold under the cursor or the current one if there is
                 Map option: tagbar_map_togglefold
 s             Toggle sort order between name and file order.
                 Map option: tagbar_map_togglesort
+```
+
+
+### [Ack](https://github.com/mileszs/ack.vim)
+
+`<leader>-a` to input `:Ack!<Space>`.
+
+#### Usage
+
+`:Ack [options] {pattern} [{directories}]`
+
+Search recursively in {directories} (which defaults to the current directory) for the {pattern}.
+
+Files containing the search term will be listed in the quickfix window, along with the line number of the occurrence, once for each occurrence. <Enter> on a line in this window will open the file and place the cursor on the matching line.
+
+#### Keyboard Shortcuts
+
+##### Original
+
+The quickfix results window is augmented with these convenience mappings:
+
+```
+?    a quick summary of these keys, repeat to close
+o    to open (same as Enter)
+O    to open and close the quickfix window
+go   to preview file, open but maintain focus on ack.vim results
+t    to open in new tab
+T    to open in new tab without moving to it
+h    to open in horizontal split
+H    to open in horizontal split, keeping focus on the results
+v    to open in vertical split
+gv   to open in vertical split, keeping focus on the results
+q    to close the quickfix window
+```
+
+##### My Custom Changes
+
+```
+?    a quick summary of these keys, repeat to close
+o    to open (same as Enter)
+O    to open and close the quickfix window
+go   to preview file, open but maintain focus on ack.vim results
+t    to open in new tab
+T    to open in new tab without moving to it
+h    to open in horizontal split
+H    to open in horizontal split, keeping focus on the results
+s    to open in vertical split
+gs   to open in vertical split, keeping focus on the results
+q    to close the quickfix window
 ```
 
 
