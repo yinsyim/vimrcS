@@ -46,7 +46,7 @@ filetype plugin indent on
 syntax on
 
 let g:pymode_lint_on_write = 1
-let g:pymode_lint_unmodified = 1
+" let g:pymode_lint_unmodified = 1
 let g:pymode_lint_on_fly = 0
 let g:pymode_rope = 0
 let g:pymode_lint_checkers = ["pylint"]
@@ -56,11 +56,11 @@ let g:pymode_folding = 0
 let g:pymode_options_max_line_length = 256
 let g:pymode_lint_signs = 0
 
-" augroup unset_folding_in_insert_mode
-" 	autocmd!
-" 	autocmd InsertEnter *.py setlocal foldmethod=marker
-" 	autocmd InsertLeave *.py setlocal foldmethod=expr
-" augroup END
+augroup unset_folding_in_insert_mode
+    autocmd!
+    autocmd InsertEnter *.py setlocal foldmethod=marker
+    autocmd InsertLeave *.py setlocal foldmethod=expr
+augroup END
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
