@@ -70,13 +70,13 @@ hi Normal guibg=NONE ctermbg=NONE
 " -----solarized-----
 " let g:solarized_termcolors=256
 " syntax enable
-" " set background=dark
-" set background=light
+" set background=dark
+" " set background=light
 " colorscheme solarized
 " -----gruvbox-----
-set background=dark
+" set background=dark
 " set background=light
-colorscheme gruvbox
+" colorscheme gruvbox
 " -----candid.vim-----
 " set termguicolors
 " set background=dark
@@ -87,8 +87,8 @@ colorscheme gruvbox
 " -----
 " colorscheme darkness
 " -----forest night-----
-" set termguicolors
-" colorscheme forest-night
+set termguicolors
+colorscheme forest-night
 " -----
 " colorscheme typewriter
 " -----

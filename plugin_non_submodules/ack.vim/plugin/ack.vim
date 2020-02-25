@@ -34,8 +34,8 @@ let s:ack_mappings = {
       \ "go": "<CR><C-W>p",
       \ "h": "<C-W><CR><C-W>K",
       \ "H": "<C-W><CR><C-W>K<C-W>b",
-      \ "s": "<C-W><CR><C-W>H<C-W>b<C-W>J<C-W>t",
-      \ "gs": "<C-W><CR><C-W>H<C-W>b<C-W>J" }
+      \ "v": "<C-W><CR><C-W>H<C-W>b<C-W>J<C-W>t",
+      \ "gv": "<C-W><CR><C-W>H<C-W>b<C-W>J" }
 
 if exists("g:ack_mappings")
   let g:ack_mappings = extend(s:ack_mappings, g:ack_mappings)
