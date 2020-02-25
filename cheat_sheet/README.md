@@ -208,15 +208,15 @@ q    to close the quickfix window
 
 ```
 ?    a quick summary of these keys, repeat to close
-o    to open (same as Enter)
-O    to open and close the quickfix window
-go   to preview file, open but maintain focus on ack.vim results
+o    to open (same as Enter)    //not working, same as 't' on my mac
+O    to open and close the quickfix window    //not working, same as 't' on my mac
+go   to preview file, open but maintain focus on ack.vim results    //not working, same as 't' on my mac
 t    to open in new tab
 T    to open in new tab without moving to it
-h    to open in horizontal split
-H    to open in horizontal split, keeping focus on the results
+i    to open in horizontal split
+I    to open in horizontal split, keeping focus on the results
 s    to open in vertical split
-gs   to open in vertical split, keeping focus on the results
+S    to open in vertical split, keeping focus on the results
 q    to close the quickfix window
 ```
 
