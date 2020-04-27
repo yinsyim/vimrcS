@@ -9,8 +9,9 @@
 :LAckHelp	ack.txt	/*:LAckHelp*
 :LAckWindow	ack.txt	/*:LAckWindow*
 ?:	ack_quick_help.txt	/*?:*
-H:	ack_quick_help.txt	/*H:*
+I:	ack_quick_help.txt	/*I:*
 O:	ack_quick_help.txt	/*O:*
+S:	ack_quick_help.txt	/*S:*
 T:	ack_quick_help.txt	/*T:*
 ack	ack.txt	/*ack*
 ack-author	ack.txt	/*ack-author*
@@ -33,9 +34,8 @@ g:ackhighlight	ack.txt	/*g:ackhighlight*
 g:ackpreview	ack.txt	/*g:ackpreview*
 g:ackprg	ack.txt	/*g:ackprg*
 go:	ack_quick_help.txt	/*go:*
-gv:	ack_quick_help.txt	/*gv:*
-h:	ack_quick_help.txt	/*h:*
+i:	ack_quick_help.txt	/*i:*
 o:	ack_quick_help.txt	/*o:*
 q:	ack_quick_help.txt	/*q:*
+s:	ack_quick_help.txt	/*s:*
 t:	ack_quick_help.txt	/*t:*
-v:	ack_quick_help.txt	/*v:*

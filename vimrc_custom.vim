@@ -57,98 +57,68 @@ nnoremap <leader>sn :setlocal number!<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => color-scheme
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" -----General-----
-if ! has("gui_running")
-    set t_Co=256
-endif
-
-hi Normal guibg=NONE ctermbg=NONE
-
-" set background=dark
-" set background=light
-
-" -----solarized-----
-" let g:solarized_termcolors=256
-" syntax enable
-" set background=dark
-" " set background=light
-" colorscheme solarized
-" -----gruvbox-----
-" set background=dark
-" set background=light
-" colorscheme gruvbox
-" -----candid.vim-----
-" set termguicolors
-" set background=dark
-" syntax on
-" colorscheme candid
-" -----darcula-----
-" colorscheme darcula
-" -----
-" colorscheme darkness
-" -----forest night-----
+" ----- General Settings -----
 set termguicolors
-colorscheme forest-night
-" -----
-" colorscheme typewriter
-" -----
-" set termguicolors
-" colorscheme perun
-" -----
-" set termguicolors
-" colorscheme sacredforest
-" -----
-" set background=light
-" colorscheme beelzebub
-" -----
-" colorscheme yui
-" -----
-" set termguicolors
-" colorscheme strawberry-light
-" colorscheme strawberry-dark
-" -----
-" set termguicolors
-" colorscheme velenjak
-" -----
-" set t_Co=256
-" set termguicolors
-
-" let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-" let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-
-" set background=dark    " Setting dark mode
-" colorscheme deus
-" let g:deus_termcolors=256
-" -----
-" set background=light
 " set background=dark
-" colorscheme solarized8
-" -----
-" set termguicolors
-" colorscheme base16-default-dark
-" -----
-" set termguicolors
-" colorscheme desert-night
-" -----
-" colorscheme yin
-" -----
-" colorscheme yang
-" -----
-" set termguicolors
 " set background=light
-" set background=dark
-" colorscheme snow
-" -----
-" colorscheme nofrils-dark
-" colorscheme nofrils-light
-" colorscheme nofrils-sepia
-" colorscheme nofrils-acme
 
-" -----Builtin-----
-" set termguicolors
+" ----- Builtin -----
 " colorscheme zellner
 " colorscheme delek
 " colorscheme desert
 " colorscheme default
 
-
+" ----- Installed -----
+" colorscheme blackdust
+" colorscheme BusyBee
+" colorscheme corporation
+" colorscheme dimgreens
+" colorscheme herald
+" colorscheme inkpot
+" colorscheme jellybeans
+" colorscheme SolarizedDark
+" colorscheme green
+" colorscheme greenvision
+" colorscheme mono_red
+" colorscheme fogbell
+" colorscheme fogbell_light
+" colorscheme fogbell_lite
+" colorscheme corvine
+" colorscheme corvine_light
+" colorscheme bluewery
+colorscheme bluewery-light
+" colorscheme synthwave84
+" colorscheme panic
+" colorscheme defminus
+" colorscheme biogoo
+" colorscheme norwaytoday
+" colorscheme xterm16
+" colorscheme onedark
+" colorscheme darcula
+" colorscheme darkness
+" colorscheme forest-night
+" colorscheme typewriter
+" colorscheme typewriter-night
+" colorscheme perun
+" colorscheme sacredforest
+" colorscheme beelzebub
+" colorscheme yui
+" colorscheme strawberry-light
+" colorscheme strawberry-dark
+" colorscheme velenjak
+" colorscheme solarized8
+" colorscheme solarized8_flat
+" colorscheme solarized8_high
+" colorscheme solarized8_low
+" colorscheme base16-default-dark
+" colorscheme desert-night
+" colorscheme yin
+" colorscheme yang
+" colorscheme snow
+" colorscheme nofrils-dark
+" colorscheme nofrils-light
+" colorscheme nofrils-sepia
+" colorscheme nofrils-acme
+" colorscheme candid
+" colorscheme gruvbox
+" colorscheme deus

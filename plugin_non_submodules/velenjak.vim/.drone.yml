@@ -1,9 +1,0 @@
-kind: pipeline
-name: default
-
-steps:
-  - name: lint
-    image: python
-    commands:
-      - pip install vim-vint
-      - vint -c --enable-neovim colors/velenjak.vim
