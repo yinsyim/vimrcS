@@ -8,6 +8,12 @@ set mouse=""
 noremap ( 10k
 noremap ) 10j
 
+" indent
+nnoremap <Tab> v>
+nnoremap <S-Tab> v<
+vnoremap <Tab> >
+vnoremap <S-Tab> <
+
 " select all
 " noremap <leader>a <Esc>ggVG
 nnoremap <C-a> <Esc>ggVG
@@ -58,12 +64,12 @@ nnoremap <leader>sn :setlocal number!<CR>
 " => color-scheme
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ----- General Settings -----
-set termguicolors
+" set termguicolors
 " set background=dark
 " set background=light
 
 " ----- Builtin -----
-" colorscheme zellner
+colorscheme zellner
 " colorscheme delek
 " colorscheme desert
 " colorscheme default
@@ -86,7 +92,7 @@ set termguicolors
 " colorscheme corvine
 " colorscheme corvine_light
 " colorscheme bluewery
-colorscheme bluewery-light
+" colorscheme bluewery-light
 " colorscheme synthwave84
 " colorscheme panic
 " colorscheme defminus
