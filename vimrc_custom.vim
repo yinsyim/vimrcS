@@ -20,8 +20,15 @@ nnoremap <C-a> <Esc>ggVG
 
 " start a new line in insert mode
 inoremap <C-o> <End><CR>
-" move cursor to the end of line in insert mode
-inoremap <C-a> <End>
+
+" move cursor to the end of line
+nnoremap 9 $
+vnoremap 9 $
+inoremap <C-e> <Esc>A
+" move cursor to the end of line
+nnoremap 0 ^
+vnoremap 0 ^
+inoremap <C-a> <Esc>I
 " NOTICE: never ever never map <C-i>, it's the signal of Tab
 
 " close or save current window
@@ -64,12 +71,12 @@ nnoremap <leader>sn :setlocal number!<CR>
 " => color-scheme
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ----- General Settings -----
-" set termguicolors
+set termguicolors
 " set background=dark
 " set background=light
 
 " ----- Builtin -----
-colorscheme zellner
+" colorscheme zellner
 " colorscheme delek
 " colorscheme desert
 " colorscheme default
@@ -97,7 +104,7 @@ colorscheme zellner
 " colorscheme panic
 " colorscheme defminus
 " colorscheme biogoo
-" colorscheme norwaytoday
+colorscheme norwaytoday
 " colorscheme xterm16
 " colorscheme onedark
 " colorscheme darcula

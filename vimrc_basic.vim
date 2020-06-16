@@ -168,13 +168,13 @@ noremap <C-l> <C-W>l
 
 
 " Useful mappings for managing tabs
-noremap <leader>tn :tabnew<cr>
-noremap <leader>to :tabonly<cr>
-noremap <leader>tc :tabclose<cr>
-noremap <leader>tm :tabmove
-noremap <leader>tx :tabnext
-" noremap <leader>t gt
-" noremap <leader>T gT
+nnoremap <leader>tn :tabnew<cr>
+nnoremap <leader>to :tabonly<cr>
+nnoremap <leader>tc :tabclose<cr>
+nnoremap <leader>tm :tabmove
+nnoremap <leader>tx :tabnext
+nnoremap t gt
+nnoremap T gT
 
 " Let 'tl' toggle between this and the last accessed tab
 let g:lasttab = 1
@@ -211,9 +211,9 @@ set laststatus=2
 " => Editing mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Remap VIM 0 to first non-blank character
-noremap 0 ^
+" noremap 0 ^
 " Map VIM 9 to the end of line
-noremap 9 $
+" noremap 9 $
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
