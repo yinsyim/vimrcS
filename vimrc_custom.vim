@@ -104,7 +104,7 @@ set termguicolors
 " colorscheme panic
 " colorscheme defminus
 " colorscheme biogoo
-colorscheme norwaytoday
+" colorscheme norwaytoday
 " colorscheme xterm16
 " colorscheme onedark
 " colorscheme darcula
@@ -132,6 +132,6 @@ colorscheme norwaytoday
 " colorscheme nofrils-light
 " colorscheme nofrils-sepia
 " colorscheme nofrils-acme
-" colorscheme candid
+colorscheme candid
 " colorscheme gruvbox
 " colorscheme deus
