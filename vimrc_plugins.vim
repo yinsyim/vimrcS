@@ -37,30 +37,30 @@ let g:neocomplete#enable_at_startup = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => python-mode
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-filetype off
-
-call pathogen#infect()
-call pathogen#helptags()
-
-filetype plugin indent on
-syntax on
-
-let g:pymode_lint_on_write = 1
-" let g:pymode_lint_unmodified = 1
-let g:pymode_lint_on_fly = 0
-let g:pymode_rope = 0
-let g:pymode_lint_checkers = ["pylint"]
+" filetype off
+"
+" call pathogen#infect()
+" call pathogen#helptags()
+"
+" filetype plugin indent on
+" syntax on
+"
+" let g:pymode_lint_on_write = 1
+" " let g:pymode_lint_unmodified = 1
+" let g:pymode_lint_on_fly = 0
+" let g:pymode_rope = 0
+" " let g:pymode_lint_checkers = ["pylint"]
 " let g:pymode_lint_checkers = ["pep8"]
-let g:pymode_rope_lookup_project = 0
-let g:pymode_folding = 0
-let g:pymode_options_max_line_length = 256
-let g:pymode_lint_signs = 0
-
-augroup unset_folding_in_insert_mode
-    autocmd!
-    autocmd InsertEnter *.py setlocal foldmethod=marker
-    autocmd InsertLeave *.py setlocal foldmethod=expr
-augroup END
+" let g:pymode_rope_lookup_project = 0
+" let g:pymode_folding = 0
+" let g:pymode_options_max_line_length = 256
+" let g:pymode_lint_signs = 0
+"
+" augroup unset_folding_in_insert_mode
+"     autocmd!
+"     autocmd InsertEnter *.py setlocal foldmethod=marker
+"     autocmd InsertLeave *.py setlocal foldmethod=expr
+" augroup END
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -94,6 +94,8 @@ nnoremap <leader>u :UndotreeToggle<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => nerdcommenter
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+filetype plugin on
+
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
 
@@ -122,4 +124,4 @@ let g:NERDToggleCheckAllLines = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Ack
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nnoremap <Leader>a :Ack!<Space>
+" nnoremap <Leader>a :Ack!<Space>

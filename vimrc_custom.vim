@@ -132,6 +132,6 @@ set termguicolors
 " colorscheme nofrils-light
 " colorscheme nofrils-sepia
 " colorscheme nofrils-acme
-colorscheme candid
-" colorscheme gruvbox
+" colorscheme candid
+colorscheme gruvbox
 " colorscheme deus
