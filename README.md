@@ -8,7 +8,6 @@ S means hope, btw...
 
 -----
 
-
 * [Install The Complete Version](#install-the-complete-version)
 * [Install Basic vimrc](#install-basic-vimrc)
 * [Uninstall](#uninstall)
@@ -16,10 +15,19 @@ S means hope, btw...
 
 
 ## Install The Complete Version
-The complete version includes lots of great plugins, configurations and color schemes. Thanks to all the excellent nerds for making it such a handy and amazing tool~ 
+The complete version includes lots of great plugins, configurations and color schemes.
+
+Install the dependencies first:
+
+    pip install pep8        // for vim-autopep8
+    pip install flake8      // for vim-flake8
+
+Then the vimrcS itself:
 
 	git clone --recursive --depth 1 https://github.com/yinsyim/vimrcS.git ~/.vimrcS
 	sh ~/.vimrcS/install_vimrcS.sh
+
+Thanks to all the excellent nerds for making it such an amazing tool~ 
 
 
 ## Install Basic vimrc
