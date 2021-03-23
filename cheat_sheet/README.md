@@ -12,7 +12,7 @@
     * [Tagbar](#tagbar)
     * [vim-autopep8](#vim-autopep8)
     * [vim-flake8](#vim-flake8)
-    * [ctrlp.vim](#ctrlp.vim)
+    * [ctrlp.vim](#ctrlpvim)
 
 - [Other Useful Skills](#other-useful-skills)
     * [Switch Between Shell and Vim (ctl-z + fg)](#switch_between_shell_and_vim)

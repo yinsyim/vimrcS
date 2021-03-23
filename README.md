@@ -1,12 +1,11 @@
 # <p align="center"> :dolphin: vimrcS :whale2: </p>
-  
+
 Based on amix's vimrc.
 
 For the beauty of simplicity and purity.
 
 S means hope, btw...
 
------
 
 * [Install The Complete Version](#install-the-complete-version)
 * [Install Basic vimrc](#install-basic-vimrc)
