@@ -1,5 +1,4 @@
-# <p align="center"> :apple: vimrc cheat sheet :green_apple: </p>
-
+# <p align="center"> vimrc cheat sheet </p>
 
 
 - [Builtin Commands](#builtin-commands):
@@ -11,7 +10,9 @@
     * [Visual Star Search](#visual-star-search)
     * [MRU](#mru)
     * [Tagbar](#tagbar)
-    * [Ack](#ack)
+    * [vim-autopep8](#vim-autopep8)
+    * [vim-flake8](#vim-flake8)
+    * [ctrlp.vim](#ctrlp.vim)
 
 - [Other Useful Skills](#other-useful-skills)
     * [Switch Between Shell and Vim (ctl-z + fg)](#switch_between_shell_and_vim)
@@ -172,53 +173,64 @@ s             Toggle sort order between name and file order.
 ```
 
 
-### [Ack](https://github.com/mileszs/ack.vim)
-
-`<leader>-a` to input `:Ack!<Space>`.
-
-#### Usage
-
-`:Ack [options] {pattern} [{directories}]`
-
-Search recursively in {directories} (which defaults to the current directory) for the {pattern}.
-
-Files containing the search term will be listed in the quickfix window, along with the line number of the occurrence, once for each occurrence. <Enter> on a line in this window will open the file and place the cursor on the matching line.
-
-#### Keyboard Shortcuts
-
-##### Original
-
-The quickfix results window is augmented with these convenience mappings:
-
+### [vim-autopep8](https://github.com/tell-k/vim-autopep8)
+call function
 ```
-?    a quick summary of these keys, repeat to close
-o    to open (same as Enter)
-O    to open and close the quickfix window
-go   to preview file, open but maintain focus on ack.vim results
-t    to open in new tab
-T    to open in new tab without moving to it
-h    to open in horizontal split
-H    to open in horizontal split, keeping focus on the results
-v    to open in vertical split
-gv   to open in vertical split, keeping focus on the results
-q    to close the quickfix window
+:Autopep8
 ```
 
-##### My Custom Changes
+with arguments
+```
+:Autopep8 --range 1 5
+
+or
+
+:call Autopep8(" --range 1 5")
+```
+
+range selection
+```
+:'<,'>Autopep8
+```
+
+
+### [vim-flake8](https://github.com/nvie/vim-flake8)
+1. Open a Python file
+2. Press <F7> to run flake8 on it
+
+It shows the errors inside a quickfix window, which will allow your to quickly jump to the error locations by simply pressing [Enter].
+
+If any of `g:flake8_show_in_gutter` or `g:flake8_show_in_file` are set to 1, call:
 
 ```
-?    a quick summary of these keys, repeat to close
-o    to open (same as Enter)    //not working, same as 't' on my mac
-O    to open and close the quickfix window    //not working, same as 't' on my mac
-go   to preview file, open but maintain focus on ack.vim results    //not working, same as 't' on my mac
-t    to open in new tab
-T    to open in new tab without moving to it
-i    to open in horizontal split
-I    to open in horizontal split, keeping focus on the results
-s    to open in vertical split
-S    to open in vertical split, keeping focus on the results
-q    to close the quickfix window
+call flake8#Flake8UnplaceMarkers()
 ```
+
+To remove all markers. No default mapping is provided.
+
+
+### [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim)
+* Run `:CtrlP` or `:CtrlP [starting-directory]` to invoke CtrlP in find file mode.
+* Run `:CtrlPBuffer` or `:CtrlPMRU` to invoke CtrlP in find buffer or find MRU file mode.
+* Run `:CtrlPMixed` to search in Files, Buffers and MRU files at the same time.
+Check `:help ctrlp-commands` and `:help ctrlp-extensions` for other commands.
+
+Once CtrlP is open:
+* Press `<F5>` to purge the cache for the current directory to get new files, remove deleted files and apply new ignore options.
+* Press `<c-f>` and `<c-b>` to cycle between modes.
+* Press `<c-d>` to switch to filename only search instead of full path.
+* Press `<c-r>` to switch to regexp mode.
+* Use `<c-j>`, `<c-k>` or the arrow keys to navigate the result list.
+* Use `<c-t>` or `<c-v>`, `<c-x>` to open the selected entry in a new tab or in a new split.
+* Use `<c-n>`, `<c-p>` to select the next/previous string in the prompt's history.
+* Use `<c-y>` to create a new file and its parent directories.
+* Use `<c-z>` to mark/unmark multiple files and `<c-o>` to open them.
+Run `:help ctrlp-mappings` or submit `?` in CtrlP for more mapping help.
+
+* Submit two or more dots `..` to go up the directory tree by one or multiple levels.
+* End the input string with a colon `:` followed by a command to execute it on the opening file(s):
+Use `:25` to jump to line 25.
+Use `:diffthis` when opening multiple files to run `:diffthis` on the first 4 files.
 
 
 ## Other Useful Skills
