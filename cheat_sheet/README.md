@@ -13,6 +13,7 @@
     * [vim-autopep8](#vim-autopep8)
     * [vim-flake8](#vim-flake8)
     * [ctrlp.vim](#ctrlpvim)
+    * [Better Rainbow Parentheses](#better-rainbow-parentheses)
 
 - [Other Useful Skills](#other-useful-skills)
     * [Switch Between Shell and Vim (ctl-z + fg)](#switch_between_shell_and_vim)
@@ -231,6 +232,16 @@ Run `:help ctrlp-mappings` or submit `?` in CtrlP for more mapping help.
 * End the input string with a colon `:` followed by a command to execute it on the opening file(s):
 Use `:25` to jump to line 25.
 Use `:diffthis` when opening multiple files to run `:diffthis` on the first 4 files.
+
+
+### [Better Rainbow Parentheses](https://github.com/kien/rainbow_parentheses.vim)
+```
+:RainbowParenthesesToggle       " Toggle it on/off
+:RainbowParenthesesLoadRound    " (), the default when toggling
+:RainbowParenthesesLoadSquare   " []
+:RainbowParenthesesLoadBraces   " {}
+:RainbowParenthesesLoadChevrons " <>
+```
 
 
 ## Other Useful Skills

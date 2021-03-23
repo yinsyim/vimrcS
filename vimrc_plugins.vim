@@ -145,3 +145,9 @@ let g:autopep8_max_line_length=79
 let g:flake8_show_in_file=0
 " To customize whether the show signs in the gutter, set g:flake8_show_in_gutter:
 let g:flake8_show_in_gutter=0
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Better Rainbow Parentheses
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd VimEnter * RainbowParenthesesToggle
