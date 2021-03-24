@@ -150,4 +150,8 @@ let g:flake8_show_in_gutter=0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Better Rainbow Parentheses
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-autocmd VimEnter * RainbowParenthesesToggle
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+au Syntax * RainbowParenthesesLoadChevrons
