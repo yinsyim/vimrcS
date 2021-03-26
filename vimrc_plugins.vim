@@ -1,8 +1,8 @@
 """"""""""""""""""""""""""""""
 " => Load pathogen paths
 """"""""""""""""""""""""""""""
-execute pathogen#infect('plugin_submodules/{}')
-execute pathogen#infect('plugin_non_submodules/{}')
+execute pathogen#infect('plugins_submodules/{}')
+execute pathogen#infect('plugins_non_submodules/{}')
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
