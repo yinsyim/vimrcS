@@ -21,6 +21,9 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " ignore certain files/directories
 let NERDTreeIgnore=['\.o$[[file]]', '\.d$[[file]]', '\.pyc', '\~$', '\.swp']
 
+" let g:NERDTreeDirArrowExpandable = '+'
+" let g:NERDTreeDirArrowCollapsible = '-'
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-commentary
