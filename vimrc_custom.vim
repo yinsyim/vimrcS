@@ -22,14 +22,14 @@ nnoremap <C-a> <Esc>ggVG
 inoremap <C-o> <End><CR>
 
 " move cursor to the end of line
-nnoremap ] $
-vnoremap ] $
-inoremap <C-e> <Esc>A
-" move cursor to the end of line
-nnoremap [ ^
-vnoremap [ ^
-inoremap <C-a> <Esc>I
 " NOTICE: never ever never map <C-i>, it's the signal of Tab
+nnoremap ' ^
+vnoremap ' ^
+inoremap <C-a> <Esc>I
+" move cursor to the end of line
+nnoremap " $
+vnoremap " $
+inoremap <C-e> <Esc>A
 
 " close or save current window
 nnoremap <leader>q :q<CR>
