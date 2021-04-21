@@ -101,6 +101,8 @@ augroup vim-go-buffer
   autocmd BufWritePre <buffer> call go#auto#fmt_autosave()
   autocmd BufWritePost <buffer> call go#auto#metalinter_autosave()
 
+  " TODO(bc): autocmd BufWinLeave call go#lsp#DidChange(expand('<afile>:p'))
+
   if !has('textprop')
     "TODO(bc): how to clear sameids and diagnostics when a non-go buffer is
     " loaded into a window and the previously loaded buffer is still loaded in
@@ -124,19 +126,6 @@ augroup vim-go-buffer
     " previous buffer's diagnostics aren't used.
     "autocmd BufWinEnter <buffer> call go#lsp#ClearDiagnosticHighlights()
   endif
-
-  autocmd BufEnter <buffer>
-        \  if go#config#AutodetectGopath() && !exists('b:old_gopath')
-        \|   let b:old_gopath = exists('$GOPATH') ? $GOPATH : -1
-        \|   let $GOPATH = go#path#Detect()
-        \| endif
-  autocmd BufLeave <buffer>
-        \  if exists('b:old_gopath')
-        \|   if b:old_gopath isnot -1
-        \|     let $GOPATH = b:old_gopath
-        \|   endif
-        \|   unlet b:old_gopath
-        \| endif
 augroup end
 
 " restore Vi compatibility settings
