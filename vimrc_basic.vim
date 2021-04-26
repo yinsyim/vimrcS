@@ -160,6 +160,9 @@ vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 " Disable highlight when <leader><cr> is pressed
 noremap <silent> <leader><cr> :noh<cr>
 
+" map ',' as ';'(match forwardly) since ';' has been used as leader
+nnoremap , ;
+
 " Smart way to move between windows
 noremap <C-j> <C-W>j
 noremap <C-k> <C-W>k
@@ -168,6 +171,7 @@ noremap <C-l> <C-W>l
 
 
 " Useful mappings for managing tabs
+nnoremap <C-t> :tabnew<cr>
 nnoremap <leader>tn :tabnew<cr>
 nnoremap <leader>to :tabonly<cr>
 nnoremap <leader>tc :tabclose<cr>
