@@ -136,7 +136,7 @@ let g:NERDToggleCheckAllLines = 1
 " map it to <F8>
 autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR>
 " Set maximum allowed line length (default: 79)
-let g:autopep8_max_line_length=79
+let g:autopep8_max_line_length=120
 " Automatically format every time saving a file
 " let g:autopep8_on_save = 1
 
