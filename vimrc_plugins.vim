@@ -173,3 +173,8 @@ let g:ycm_collect_identifiers_from_comments_and_strings = 1
 let g:ycm_key_list_select_completion = ['<Down>']
 let g:ycm_key_list_previous_completion = ['<Up>']
 let g:ycm_key_list_stop_completion = ['<C-y>']
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-go
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:go_fmt_autosave = 1
