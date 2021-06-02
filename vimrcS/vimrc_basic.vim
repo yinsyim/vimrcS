@@ -169,6 +169,7 @@ noremap <C-l> <C-W>l
 
 " Useful mappings for managing tabs
 nnoremap <leader>tn :tabnew<cr>
+nnoremap <C-t> :tabnew<cr>
 nnoremap <leader>to :tabonly<cr>
 nnoremap <leader>tc :tabclose<cr>
 nnoremap <leader>tm :tabmove

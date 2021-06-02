@@ -68,3 +68,12 @@ noremap <leader>g :Goyo<CR>
 let g:goyo_width = 120
 let g:goyo_height = 90
 let g:goyo_linenr = 0
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => YouCompleteMe
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:ycm_complete_in_comments = 1
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_auto_hover = 0
+nnoremap <leader>y :YcmRestartServer<CR>
