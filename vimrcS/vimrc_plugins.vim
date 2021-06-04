@@ -75,5 +75,11 @@ let g:goyo_linenr = 0
 let g:ycm_complete_in_comments = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_autoclose_preview_window_after_insertion = 1
-let g:ycm_auto_hover = 0
+let g:ycm_auto_hover = ''
 nnoremap <leader>y :YcmRestartServer<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-go
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:go_fmt_autosave = 1
+let g:go_imports_autosave = 1
