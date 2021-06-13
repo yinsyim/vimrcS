@@ -83,3 +83,11 @@ nnoremap <leader>y :YcmRestartServer<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:go_fmt_autosave = 1
 let g:go_imports_autosave = 1
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => ale
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:ale_completion_autoimport = 0
+let g:ale_linters = {
+\   'go': [],           
+\}
