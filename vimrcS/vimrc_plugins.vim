@@ -88,6 +88,15 @@ let g:go_imports_autosave = 1
 " => ale
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:ale_completion_autoimport = 0
-let g:ale_linters = {
-\   'go': [],           
-\}
+let g:ale_hover_cursor = 0
+let g:ale_hover_to_preview = 0
+let g:ale_linters = {'go': []}
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-autopep8
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR>
+let g:autopep8_max_line_length=120
+let g:autopep8_on_save = 1
+let g:autopep8_disable_show_diff=1
