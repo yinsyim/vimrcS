@@ -101,6 +101,6 @@ let g:ale_linters = {'go': []}
 " => vim-autopep8
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR>
-let g:autopep8_max_line_length=120
+let g:autopep8_max_line_length=180
 let g:autopep8_on_save = 1
 let g:autopep8_disable_show_diff=1
