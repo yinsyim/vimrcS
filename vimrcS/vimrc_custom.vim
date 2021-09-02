@@ -7,6 +7,8 @@ set mouse=""
 " move cursor 10 lines
 noremap ( 10k
 noremap ) 10j
+noremap " 10k
+noremap ' 10j
 
 " indent
 nnoremap <Tab> v>
@@ -15,20 +17,17 @@ vnoremap <Tab> >
 vnoremap <S-Tab> <
 
 " select all
-" noremap <leader>a <Esc>ggVG
-nnoremap <C-a> <Esc>ggVG
+nnoremap <leader>a <Esc>ggVG
 
 " start a new line in insert mode
 inoremap <C-o> <End><CR>
 
 " move cursor to the end of line
 " NOTICE: never ever never map <C-i>, it's the signal of Tab
-nnoremap ' ^
-vnoremap ' ^
+noremap <C-a> ^
 inoremap <C-a> <Esc>I
 " move cursor to the end of line
-nnoremap " $
-vnoremap " $
+noremap <C-e> $
 inoremap <C-e> <Esc>A
 
 " close or save current window
