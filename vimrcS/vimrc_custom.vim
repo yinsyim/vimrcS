@@ -5,10 +5,10 @@
 set mouse=""
 
 " move cursor 10 lines
+" noremap ( 10k
+" noremap ) 10j
 noremap ( 10k
 noremap ) 10j
-noremap " 10k
-noremap ' 10j
 
 " indent
 nnoremap <Tab> v>
@@ -24,10 +24,12 @@ inoremap <C-o> <End><CR>
 
 " move cursor to the end of line
 " NOTICE: never ever never map <C-i>, it's the signal of Tab
-noremap <C-a> ^
+" noremap <C-a> ^
+noremap ' ^
 inoremap <C-a> <Esc>I
 " move cursor to the end of line
-noremap <C-e> $
+" noremap <C-e> $
+noremap " $
 inoremap <C-e> <Esc>A
 
 " close or save current window

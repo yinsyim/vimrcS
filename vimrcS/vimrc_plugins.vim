@@ -87,6 +87,7 @@ nnoremap <leader>y :YcmRestartServer<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:go_fmt_autosave = 1
 let g:go_imports_autosave = 1
+let g:go_fmt_command = 'gofmt'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => ale
@@ -104,3 +105,9 @@ autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR>
 let g:autopep8_max_line_length=180
 let g:autopep8_on_save = 1
 let g:autopep8_disable_show_diff=1
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => auto-pairs
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:AutoPairsMapCR = 0
+let g:AutoPairsCenterLine = 0
