@@ -11,10 +11,10 @@ noremap ( 10k
 noremap ) 10j
 
 " indent
-nnoremap <Tab> v>
-nnoremap <S-Tab> v<
-vnoremap <Tab> >
-vnoremap <S-Tab> <
+nnoremap = v>
+nnoremap - v<
+vnoremap = >
+vnoremap - <
 
 " select all
 nnoremap <leader>a <Esc>ggVG
