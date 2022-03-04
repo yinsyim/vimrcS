@@ -11,26 +11,27 @@ noremap ( 10k
 noremap ) 10j
 
 " indent
-nnoremap = v>
-nnoremap - v<
-vnoremap = >
-vnoremap - <
+nnoremap > >>
+nnoremap < <<
 
 " select all
 nnoremap <leader>a <Esc>ggVG
 
 " start a new line in insert mode
-inoremap <C-o> <End><CR>
+" inoremap <C-o> <End><CR>
 
-" move cursor to the end of line
-" NOTICE: never ever never map <C-i>, it's the signal of Tab
-" noremap <C-a> ^
+" move cursor to the beginning or end of line in normal mode
 noremap ' ^
-inoremap <C-a> <Esc>I
-" move cursor to the end of line
-" noremap <C-e> $
 noremap " $
+
+" move cursor to the beginning or end of line in insert mode
+" NOTICE: never ever never map <C-i>, it's the signal of Tab
+inoremap <C-a> <Esc>I
 inoremap <C-e> <Esc>A
+
+" insert a blank line and move cursor above
+" used when cursor is between {} in insert mode
+inoremap <C-o> <CR><ESC>O<TAB>
 
 " close or save current window
 nnoremap <leader>q :q<CR>
