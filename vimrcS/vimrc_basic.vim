@@ -17,6 +17,9 @@ let mapleader = ";"
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=3
 
+" no wrap on startup
+set nowrap
+
 " Avoid garbled characters in Chinese language windows OS
 " let $LANG='en'
 " set langmenu=en
@@ -92,11 +95,6 @@ if $COLORTERM == 'gnome-terminal'
     set t_Co=256
 endif
 
-try
-    colorscheme desert
-catch
-endtry
-
 set background=dark
 
 " Set extra options when running in GUI mode
@@ -140,8 +138,8 @@ set tabstop=4
 set lbr
 set tw=500
 
-set ai "Auto indent
-" set si "Smart indent
+" set ai "Auto indent
+set si "Smart indent
 
 
 """"""""""""""""""""""""""""""

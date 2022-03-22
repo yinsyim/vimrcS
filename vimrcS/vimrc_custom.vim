@@ -31,7 +31,7 @@ inoremap <C-e> <Esc>A
 
 " insert a blank line and move cursor above
 " used when cursor is between (), [] or {} in insert mode
-inoremap <C-r> <CR><ESC>O<TAB>
+inoremap <C-r> <CR><Backspace><ESC>O
 
 " close or save current window
 nnoremap <leader>q :q<CR>
