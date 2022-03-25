@@ -27,10 +27,10 @@ filetype plugin on
 """"""""""""""""""""""""""""""
 " => Shell section
 """"""""""""""""""""""""""""""
-if exists('$TMUX')
-    if has('nvim')
-        set termguicolors
-    else
-        set term=screen-256color
-    endif
-endif
+" if exists('$TMUX')
+"     if has('nvim')
+"         set termguicolors
+"     else
+"         set term=screen-256color
+"     endif
+" endif
