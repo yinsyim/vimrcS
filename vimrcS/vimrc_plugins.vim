@@ -49,7 +49,7 @@ let g:NERDToggleCheckAllLines = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Better Rainbow Parentheses
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-au VimEnter * RainbowParenthesesToggle
+" au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
@@ -103,7 +103,7 @@ let g:ale_linters = {'go': []}
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR>
 let g:autopep8_max_line_length=180
-let g:autopep8_on_save = 1
+let g:autopep8_on_save = 0
 let g:autopep8_disable_show_diff=1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

@@ -2,8 +2,8 @@
 " => color-scheme
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ----- General Settings -----
-set termguicolors
-" set background=dark
+" set termguicolors
+set background=dark
 " set background=light
 
 " ----- Builtin -----
