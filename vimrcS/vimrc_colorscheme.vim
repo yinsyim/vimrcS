@@ -14,3 +14,4 @@ set background=dark
 
 " ----- Installed -----
 colorscheme gruvbox
+" colorscheme corporation
