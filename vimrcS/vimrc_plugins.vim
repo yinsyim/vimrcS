@@ -81,6 +81,7 @@ let g:ycm_auto_hover = ''
 let g:ycm_key_list_select_completion = ['<Down>']
 let g:ycm_key_list_previous_completion = ['<Up>']
 nnoremap <leader>y :YcmRestartServer<CR>
+nnoremap <leader>d :YcmCompleter GoToDefinition<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-go
