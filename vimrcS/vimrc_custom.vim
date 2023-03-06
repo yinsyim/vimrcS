@@ -53,9 +53,9 @@ nnoremap <leader><Space> :noh<CR>
 
 " close the neighbouring window
 noremap <leader>j <C-w>j:q<CR>
-noremap <leader>k <C-w>k:q<CR>
-noremap <leader>h <C-w>h:q<CR>
-noremap <leader>l <C-w>l:q<CR>
+" noremap <leader>k <C-w>k:q<CR>
+" noremap <leader>h <C-w>h:q<CR>
+" noremap <leader>l <C-w>l:q<CR>
 
 " edit vimrc_custom.vim
 noremap <leader>ev :e ~/.vimrcS/vimrc_custom.vim<CR>

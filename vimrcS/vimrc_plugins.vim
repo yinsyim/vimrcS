@@ -112,3 +112,9 @@ let g:autopep8_disable_show_diff=1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:AutoPairsMapCR = 0
 let g:AutoPairsCenterLine = 0
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Ack
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+cnoreabbrev Ack Ack!
+nnoremap <Leader>k :Ack!<CR>
