@@ -12,7 +12,7 @@ nnoremap <leader>n :NERDTreeToggle<CR>
 " autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
 " Exit Vim if NERDTree is the only window remaining in the only tab.
-autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+" autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
 " ignore certain files/directories
 let NERDTreeIgnore=['\.o$[[file]]', '\.d$[[file]]', '\.pyc', '\~$', '\.swp']
@@ -101,14 +101,19 @@ let g:ale_hover_cursor = 0
 let g:ale_hover_to_preview = 0
 let g:ale_linters = {'go': []}
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-flake8
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" autocmd FileType python map <buffer> <F3> :call flake8#Flake8()<CR>
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-autopep8
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR>
 let g:autopep8_max_line_length=180
-let g:autopep8_on_save = 0
-let g:autopep8_disable_show_diff=1
+let g:autopep8_on_save = 1
+let g:autopep8_disable_show_diff=0
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => auto-pairs
