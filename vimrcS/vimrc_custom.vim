@@ -21,8 +21,8 @@ nnoremap <leader>a <Esc>ggVG
 noremap ' ^
 noremap " $
 
-" start a new line in insert mode
-inoremap <C-o> <End><CR>
+" start a new line above in insert mode
+inoremap <C-o> <Esc>O
 
 " move cursor to the beginning or end of line in insert mode
 " NOTICE: never ever never map <C-i>, it's the signal of Tab
