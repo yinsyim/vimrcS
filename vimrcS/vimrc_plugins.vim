@@ -130,6 +130,6 @@ let g:AutoPairsCenterLine = 0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Ack
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-cnoreabbrev Ack Ack!
-nnoremap <Leader>k :Ack!<CR>
+cnoreabbrev Ack Ack! --ignore-file=ext:log
+nnoremap <Leader>f :Ack!<CR>
 let g:ackhighlight = 1

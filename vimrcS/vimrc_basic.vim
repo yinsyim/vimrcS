@@ -15,7 +15,7 @@ let mapleader = ";"
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set 7 lines to the cursor - when moving vertically using j/k
-set so=3
+set so=7
 
 " no wrap on startup
 set nowrap
@@ -214,9 +214,7 @@ set laststatus=2
 " => Editing mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Remap VIM 0 to first non-blank character
-" noremap 0 ^
-" Map VIM 9 to the end of line
-" noremap 9 $
+noremap 0 ^
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

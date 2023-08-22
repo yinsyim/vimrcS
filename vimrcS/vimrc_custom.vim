@@ -18,8 +18,8 @@ nnoremap < <<
 nnoremap <leader>a <Esc>ggVG
 
 " move cursor to the beginning or end of line in normal mode
-noremap ' ^
-noremap " $
+" noremap ' ^
+" noremap " $
 
 " start a new line above in insert mode
 inoremap <C-o> <Esc>O
@@ -52,10 +52,19 @@ nnoremap <leader>wqa :wqa<CR>
 nnoremap <leader><Space> :noh<CR>
 
 " close the neighbouring window
-noremap <leader>j <C-w>j:q<CR>
+" noremap <leader>j <C-w>j:q<CR>
 " noremap <leader>k <C-w>k:q<CR>
 " noremap <leader>h <C-w>h:q<CR>
 " noremap <leader>l <C-w>l:q<CR>
+
+" close the window below
+noremap <leader>b <C-w>j:q<CR>
+
+" resize pane
+noremap <leader>h <C-w>10<
+noremap <leader>l <C-w>10>
+noremap <leader>k <C-w>10+
+noremap <leader>j <C-w>10-
 
 " edit vimrc_custom.vim
 noremap <leader>ev :e ~/.vimrcS/vimrc_custom.vim<CR>
@@ -67,3 +76,6 @@ nnoremap <leader>sp :setlocal paste!<CR>
 nnoremap <leader>sw :setlocal wrap!<CR>
 " set number!
 nnoremap <leader>sn :setlocal number!<CR>
+
+" yank (copy) to end of line
+nnoremap Y y$
