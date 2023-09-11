@@ -1,8 +1,9 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Nerdtree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" open Nerdtree
-nnoremap <leader>n :NERDTreeToggle<CR>
+" open Nerdtree and mirror the NERDTree before showing it. This makes it the same on all tabs.
+" nnoremap <leader>n :NERDTreeToggle<CR>
+nnoremap <leader>n :NERDTreeMirror<CR>:NERDTreeFocus<CR>
 
 " Close the tab if NERDTree is the only window remaining in it.
 " autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
@@ -21,8 +22,8 @@ let NERDTreeIgnore=['\.o$[[file]]', '\.d$[[file]]', '\.pyc', '\~$', '\.swp']
 " autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
 
 " If another buffer tries to replace NERDTree, put it in the other window, and bring back NERDTree.
-autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
-            \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
+" autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
+"             \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => nerdcommenter
@@ -130,6 +131,6 @@ let g:AutoPairsCenterLine = 0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Ack
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-cnoreabbrev Ack Ack! --ignore-file=ext:log
+cnoreabbrev Ack Ack! --ignore-file=ext:log --literal
 nnoremap <Leader>f :Ack!<CR>
 let g:ackhighlight = 1

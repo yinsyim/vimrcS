@@ -23,15 +23,9 @@ This plugin adds Go language support for Vim, with the following main features:
 * Precise type-safe renaming of identifiers with `:GoRename`.
 * See which code is covered by tests with `:GoCoverage`.
 * Add or remove tags on struct fields with `:GoAddTags` and `:GoRemoveTags`.
-* Call [`staticcheck`](https://staticcheck.io/) with `:GoMetaLinter` to invoke all possible linters
-  (`golint`, `vet`, `errcheck`, `deadcode`, etc.) and put the result in the
-  quickfix or location list.
-* Lint your code with `:GoLint`, run your code through `:GoVet` to catch static
-  errors, or make sure errors are checked with `:GoErrCheck`.
-* Advanced source analysis tools utilizing `guru`, such as `:GoImplements`,
-  `:GoCallees`, and `:GoReferrers`.
-* ... and many more! Please see [doc/vim-go.txt](doc/vim-go.txt) for more
-  information.
+* Lint your code with `:GoLint` or `:GoMetaLinter`, run your code through `:GoVet` to catch static errors, or make sure errors are checked with `:GoErrCheck`.
+* Advanced source analysis utilizing `gopls`, such as `:GoImplements`, `:GoCallees`, and `:GoReferrers`.
+* ... and many more! Please see [doc/vim-go.txt](doc/vim-go.txt) for more information.
 * Integration with [`gopls`](https://github.com/golang/tools/blob/master/gopls/README.md).
 * The `gopls` instance can be shared with other Vim plugins.
 * Vim-go's use of `gopls` can be disabled and alternative tools can be used when desired.
@@ -40,7 +34,7 @@ This plugin adds Go language support for Vim, with the following main features:
 
 ## Install
 
-vim-go requires at least Vim 8.0.1453 or Neovim 0.4.0.
+vim-go requires at least Vim 8.1.2269 or Neovim 0.4.0.
 
 The [**latest stable release**](https://github.com/fatih/vim-go/releases/latest) is the
 recommended version to use. If you choose to use the master branch instead,
@@ -52,6 +46,8 @@ for popular package managers:
 
 * [Vim 8 packages](http://vimhelp.appspot.com/repeat.txt.html#packages)
   * `git clone https://github.com/fatih/vim-go.git ~/.vim/pack/plugins/start/vim-go`
+* [Neovim packages](https://neovim.io/doc/user/repeat.html#packages)
+  * `git clone https://github.com/fatih/vim-go.git ~/.local/share/nvim/site/pack/plugins/start/vim-go`
 * [Pathogen](https://github.com/tpope/vim-pathogen)
   * `git clone https://github.com/fatih/vim-go.git ~/.vim/bundle/vim-go`
 * [vim-plug](https://github.com/junegunn/vim-plug)
@@ -61,7 +57,7 @@ for popular package managers:
 
 You will also need to install all the necessary binaries. vim-go makes it easy
 to install all of them by providing a command, `:GoInstallBinaries`, which will
-`go get` all the required binaries.
+`go install` all the required binaries.
 
 Check out the Install section in [the documentation](doc/vim-go.txt) for more
 detailed instructions (`:help go-install`).
@@ -75,7 +71,7 @@ Depending on your installation method, you may have to generate the plugin's
 [`help tags`](http://vimhelp.appspot.com/helphelp.txt.html#%3Ahelptags)
 manually (e.g. `:helptags ALL`).
 
-We also have an [official vim-go tutorial](https://github.com/fatih/vim-go/wiki).
+We also have a [tutorial](https://github.com/fatih/vim-go/wiki/Tutorial) in the [official vim-go wiki](https://github.com/fatih/vim-go/wiki).
 
 ## FAQ and troubleshooting
 

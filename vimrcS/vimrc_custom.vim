@@ -79,3 +79,15 @@ nnoremap <leader>sn :setlocal number!<CR>
 
 " yank (copy) to end of line
 nnoremap Y y$
+
+augroup QuickFix
+    au FileType qf nnoremap <buffer> t <C-W><CR><C-W>T
+    au FileType qf nnoremap <buffer> T <C-W><CR><C-W>TgT<C-W>j
+    au FileType qf nnoremap <buffer> o <CR>
+    au FileType qf nnoremap <buffer> O <CR><C-W>p<C-W>c
+    au FileType qf nnoremap <buffer> go <CR><C-W>p
+    au FileType qf nnoremap <buffer> i <C-W><CR><C-W>K
+    au FileType qf nnoremap <buffer> I <C-W><CR><C-W>K<C-W>b
+    au FileType qf nnoremap <buffer> s <C-W><CR><C-W>H<C-W>b<C-W>J<C-W>t
+    au FileType qf nnoremap <buffer> gs <C-W><CR><C-W>H<C-W>b<C-W>J
+augroup END
