@@ -80,6 +80,7 @@ nnoremap <leader>sn :setlocal number!<CR>
 " yank (copy) to end of line
 nnoremap Y y$
 
+" the ways to open a file in quickfix window
 augroup QuickFix
     au FileType qf nnoremap <buffer> t <C-W><CR><C-W>T
     au FileType qf nnoremap <buffer> T <C-W><CR><C-W>TgT<C-W>j
