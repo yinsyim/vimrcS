@@ -100,6 +100,8 @@ let g:go_fmt_autosave = 1
 let g:go_imports_autosave = 1
 let g:go_fmt_command = 'gofmt'
 
+nnoremap <leader>c :GoCallers<CR>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => ale
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
